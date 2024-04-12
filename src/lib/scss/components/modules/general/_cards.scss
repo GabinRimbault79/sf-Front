@@ -1,0 +1,35 @@
+@use "../../../utils/responsive" as responsives;
+
+.gpt_cards{
+  margin-top: 15px;
+  @include responsives.Tablet{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  a.cards{
+    width: auto;
+    height: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $grey-primary;
+    box-shadow: 0 2px 15px -3px $grey-4;
+
+    @include responsives.Tablet{
+      margin: 0 10px;
+    }
+
+    &:hover{
+      box-shadow: 0 0 7px 0 rgba(0,0,0,.2);
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

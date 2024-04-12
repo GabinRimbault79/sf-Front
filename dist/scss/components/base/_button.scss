@@ -1,0 +1,81 @@
+@use "../../utils/responsive" as responsives;
+
+a{
+  &.primary{
+    color: $color-w;
+
+    &:hover{
+
+    }
+  }
+
+  &.btn{
+    width: 100%;
+
+    &.primary{
+      border: 1px solid $primary-color;
+      background-color: $primary-color;
+      color: $color-w;
+    }
+
+    &.secondary{
+      border: 1px solid $secondary-color;
+      background-color: $secondary-color;
+      color: $color-w;
+
+      &:hover{
+        background-color: $teinte-secondary;
+      }
+    }
+
+    &.success{
+      border: 1px solid $success;
+      background-color: transparent;
+      color: $success;
+
+      &:hover{
+        background-color: $hover-success;
+      }
+    }
+
+    &.warning{
+      border: 1px solid $warning;
+      background-color: transparent;
+      color: $warning;
+
+      &:hover{
+        background-color: $hover-warning;
+      }
+    }
+
+    &.critical{
+      border: 1px solid $critical;
+      background-color: transparent;
+      color: $critical;
+
+      &:hover{
+        background-color: $hover-critical;
+      }
+    }
+
+    &.infos{
+      border: 1px solid $infos;
+      background-color: transparent;
+      color: $infos;
+
+      &:hover{
+        background-color: $hover-infos;
+      }
+    }
+
+    &.btn-rounded{
+      border-radius: 25px;
+    }
+
+    @include responsives.Tablet{
+      width: 250px;
+    }
+  }
+}
+
+

@@ -1,0 +1,29 @@
+.alert{
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: $bg-secondary;
+
+  .content_alert{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p{
+      font-weight: $font-weight-regular;
+      &.cross-alert{
+        cursor: pointer;
+      }
+    }
+  }
+
+  .content_additional{
+    p{
+      text-align: left;
+    }
+  }
+}
