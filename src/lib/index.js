@@ -26,6 +26,9 @@ import GptCards from "./components/modules/General/Cards/GptCards";
 import Carousel from "./components/modules/General/Carousel/Carousel";
 import WrapperExample from "./components/WrapperExample";
 import SideBar from "./components/modules/Navigation/SideBar/SideBar";
+import Table from "./components/base/Table";
+import Accordion from "./components/modules/General/Accordion/Accordion";
+import ButtonGrp from "./components/base/ButtonGrp";
 
 
 export {
@@ -56,5 +59,8 @@ export {
     GptCards,
     Carousel,
     WrapperExample,
-    SideBar
+    SideBar,
+    Table,
+    Accordion,
+    ButtonGrp
 }

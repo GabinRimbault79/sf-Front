@@ -1,11 +1,13 @@
 @use "../../utils/responsive" as responsives;
 
-a{
-  &.primary{
-    color: $color-w;
+a, button{
+  &.link{
+    color: $primary-color;
+    background-color: transparent;
+    border: 0;
 
     &:hover{
-
+      text-decoration: $primary-color solid underline;
     }
   }
 
@@ -14,69 +16,136 @@ a{
     margin: 10px;
 
     &.primary{
-      border: 1px solid $primary-color;
-      background-color: $primary-color;
-      color: $color-w;
+
+      &.outline{
+        background-color: transparent;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+
+        &:hover{
+          background-color: $teinte-primary;
+        }
+      }
 
       &:hover{
         background-color: $teinte-primary;
         color: $primary-color;
+        border: 1px solid $primary-color;
       }
     }
 
     &.secondary{
-      border: 1px solid $secondary-color;
-      background-color: $secondary-color;
-      color: $color-w;
+
+      &.outline{
+        background-color: transparent;
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+
+        &:hover{
+          background-color: $teinte-secondary;
+        }
+      }
 
       &:hover{
         background-color: $teinte-secondary;
         color: $secondary-color;
+        border: 1px solid $secondary-color;
       }
     }
 
-    &.success{
-      border: 1px solid $success;
-      background-color: transparent;
-      color: $success;
+    &.default{
+      color: $primary-color;
 
-      &:hover{
-        background-color: $hover-success;
+      &.bg-color{
+        background-color: $bg-default;
       }
-    }
 
-    &.warning{
-      border: 1px solid $warning;
-      background-color: transparent;
-      color: $warning;
-
-      &:hover{
-        background-color: $hover-warning;
+      &.border{
+        border: 1px solid $secondary-color;
       }
-    }
 
-    &.critical{
-      border: 1px solid $critical;
-      background-color: transparent;
-      color: $critical;
-
-      &:hover{
-        background-color: $hover-critical;
+      &.important{
+        border-top: 5px solid $secondary-color;
+        border-radius: 0;
       }
     }
 
     &.infos{
-      border: 1px solid $infos;
-      background-color: transparent;
-      color: $infos;
+
+      &.outline{
+        background-color: transparent;
+        color: $infos;
+        border: 1px solid $infos;
+
+        &:hover{
+          background-color: $hover-infos;
+        }
+      }
 
       &:hover{
+        color: $infos;
         background-color: $hover-infos;
+        border: 1px solid $infos;
+      }
+    }
+
+    &.success{
+      &.outline{
+        background-color: transparent;
+        color: $success;
+        border: 1px solid $success;
+
+        &:hover{
+          background-color: $hover-success;
+        }
+      }
+      &:hover{
+        color: $success;
+        background-color: $hover-success;
+        border: 1px solid $success;
+      }
+    }
+
+    &.warning{
+      &.outline{
+        background-color: transparent;
+        color: $warning;
+        border: 1px solid $warning;
+
+        &:hover{
+          background-color: $hover-warning;
+        }
+      }
+      &:hover{
+        color: $warning;
+        background-color: $hover-warning;
+        border: 1px solid $warning;
+      }
+    }
+
+    &.critical{
+      &.outline{
+        background-color: transparent;
+        color: $critical;
+        border: 1px solid $critical;
+
+        &:hover{
+          background-color: $hover-critical;
+        }
+      }
+      &:hover{
+        color: $critical;
+        background-color: $hover-critical;
+        border: 1px solid $critical;
       }
     }
 
     &.btn-rounded{
       border-radius: 25px;
+    }
+
+    &.disabled{
+      color: $color-w;
     }
 
     @include responsives.Tablet{

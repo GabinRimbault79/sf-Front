@@ -1,4 +1,6 @@
 /* ----------------------------- GENERAL ----------------------------- */
+/* ----------------------------- COLOR & BG ----------------------------- */
+/* ----------------------------- COLOR SOCIAL ----------------------------- */
 /* ----------------------------- FONT ----------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;1,300;1,400&display=swap");
@@ -53,68 +55,117 @@ code {
   color: #d63384 !important;
 }
 
-a.primary {
-  color: #FFFFFF;
+a.link, button.link {
+  color: #16559f;
+  background-color: transparent;
+  border: 0;
 }
-a.btn {
+a.link:hover, button.link:hover {
+  text-decoration: #16559f solid underline;
+}
+a.btn, button.btn {
   width: 100%;
   margin: 10px;
 }
-a.btn.primary {
+a.btn.primary.outline, button.btn.primary.outline {
+  background-color: transparent;
+  color: #16559f;
   border: 1px solid #16559f;
-  background-color: #16559f;
-  color: #FFFFFF;
 }
-a.btn.primary:hover {
+a.btn.primary.outline:hover, button.btn.primary.outline:hover {
+  background-color: rgba(22, 85, 159, 0.1);
+}
+a.btn.primary:hover, button.btn.primary:hover {
   background-color: rgba(22, 85, 159, 0.1);
   color: #16559f;
+  border: 1px solid #16559f;
 }
-a.btn.secondary {
+a.btn.secondary.outline, button.btn.secondary.outline {
+  background-color: transparent;
+  color: #48c0fd;
   border: 1px solid #48c0fd;
-  background-color: #48c0fd;
-  color: #FFFFFF;
 }
-a.btn.secondary:hover {
+a.btn.secondary.outline:hover, button.btn.secondary.outline:hover {
+  background-color: rgba(72, 192, 253, 0.1);
+}
+a.btn.secondary:hover, button.btn.secondary:hover {
   background-color: rgba(72, 192, 253, 0.1);
   color: #48c0fd;
+  border: 1px solid #48c0fd;
 }
-a.btn.success {
-  border: 1px solid #30C48D;
-  background-color: transparent;
-  color: #30C48D;
+a.btn.default, button.btn.default {
+  color: #16559f;
 }
-a.btn.success:hover {
-  background-color: rgba(48, 196, 141, 0.1);
+a.btn.default.bg-color, button.btn.default.bg-color {
+  background-color: #F0F0F0;
 }
-a.btn.warning {
-  border: 1px solid #F9CA16;
-  background-color: transparent;
-  color: #F9CA16;
+a.btn.default.border, button.btn.default.border {
+  border: 1px solid #48c0fd;
 }
-a.btn.warning:hover {
-  background-color: rgba(249, 202, 22, 0.1);
+a.btn.default.important, button.btn.default.important {
+  border-top: 5px solid #48c0fd;
+  border-radius: 0;
 }
-a.btn.critical {
-  border: 1px solid #F87F7F;
-  background-color: transparent;
-  color: #F87F7F;
-}
-a.btn.critical:hover {
-  background-color: rgba(248, 127, 127, 0.1);
-}
-a.btn.infos {
-  border: 1px solid #76A9FA;
+a.btn.infos.outline, button.btn.infos.outline {
   background-color: transparent;
   color: #76A9FA;
+  border: 1px solid #76A9FA;
 }
-a.btn.infos:hover {
+a.btn.infos.outline:hover, button.btn.infos.outline:hover {
   background-color: rgba(118, 169, 250, 0.1);
 }
-a.btn.btn-rounded {
+a.btn.infos:hover, button.btn.infos:hover {
+  color: #76A9FA;
+  background-color: rgba(118, 169, 250, 0.1);
+  border: 1px solid #76A9FA;
+}
+a.btn.success.outline, button.btn.success.outline {
+  background-color: transparent;
+  color: #30C48D;
+  border: 1px solid #30C48D;
+}
+a.btn.success.outline:hover, button.btn.success.outline:hover {
+  background-color: rgba(48, 196, 141, 0.1);
+}
+a.btn.success:hover, button.btn.success:hover {
+  color: #30C48D;
+  background-color: rgba(48, 196, 141, 0.1);
+  border: 1px solid #30C48D;
+}
+a.btn.warning.outline, button.btn.warning.outline {
+  background-color: transparent;
+  color: #F9CA16;
+  border: 1px solid #F9CA16;
+}
+a.btn.warning.outline:hover, button.btn.warning.outline:hover {
+  background-color: rgba(249, 202, 22, 0.1);
+}
+a.btn.warning:hover, button.btn.warning:hover {
+  color: #F9CA16;
+  background-color: rgba(249, 202, 22, 0.1);
+  border: 1px solid #F9CA16;
+}
+a.btn.critical.outline, button.btn.critical.outline {
+  background-color: transparent;
+  color: #F87F7F;
+  border: 1px solid #F87F7F;
+}
+a.btn.critical.outline:hover, button.btn.critical.outline:hover {
+  background-color: rgba(248, 127, 127, 0.1);
+}
+a.btn.critical:hover, button.btn.critical:hover {
+  color: #F87F7F;
+  background-color: rgba(248, 127, 127, 0.1);
+  border: 1px solid #F87F7F;
+}
+a.btn.btn-rounded, button.btn.btn-rounded {
   border-radius: 25px;
 }
+a.btn.disabled, button.btn.disabled {
+  color: #FFFFFF;
+}
 @media screen and (min-width: 768px) {
-  a.btn {
+  a.btn, button.btn {
     width: 250px;
   }
 }
@@ -196,11 +247,11 @@ ul.gpt-list li:hover a, ol.gpt-list li:hover a {
   color: #16559f;
 }
 ul.gpt-list li:first-child, ol.gpt-list li:first-child {
-  border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 ul.gpt-list li:last-child, ol.gpt-list li:last-child {
-  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 ul.list, ol.list {
@@ -840,6 +891,138 @@ ol {
   border-radius: 0;
 }
 
+.grey {
+  color: #000000;
+}
+.grey.bg-color {
+  background-color: #EDF2F7;
+}
+.grey:hover {
+  color: #000000;
+  background-color: #E2E8F0;
+}
+
+.red {
+  color: #FFFFFF;
+}
+.red.bg-color {
+  background-color: #E53E3E;
+}
+.red:hover {
+  color: #FFFFFF;
+  background-color: #C53030;
+}
+
+.orange {
+  color: #FFFFFF;
+}
+.orange.bg-color {
+  background-color: #DD6B20;
+}
+.orange:hover {
+  color: #FFFFFF;
+  background-color: #C53030;
+}
+
+.yellow {
+  color: #000000;
+}
+.yellow.bg-color {
+  background-color: #ECC94B;
+}
+.yellow:hover {
+  color: #000000;
+  background-color: #D69E2E;
+}
+
+.green {
+  color: #FFFFFF;
+}
+.green.bg-color {
+  background-color: #38A169;
+}
+.green:hover {
+  color: #FFFFFF;
+  background-color: #2F855A;
+}
+
+.blue {
+  color: #FFFFFF;
+}
+.blue.bg-color {
+  background-color: #3182ce;
+}
+.blue:hover {
+  color: #FFFFFF;
+  background-color: #2b6cb0;
+}
+
+.purple {
+  color: #FFFFFF;
+}
+.purple.bg-color {
+  background-color: #805AD5;
+}
+.purple:hover {
+  color: #FFFFFF;
+  background-color: #6B46C1;
+}
+
+.linkedin {
+  color: #FFFFFF;
+}
+.linkedin.bg-color {
+  background-color: #00A0DC;
+}
+.linkedin:hover {
+  color: #FFFFFF;
+  background-color: #008CC9;
+}
+
+.facebook {
+  color: #FFFFFF;
+}
+.facebook.bg-color {
+  background-color: #385898;
+}
+.facebook:hover {
+  color: #FFFFFF;
+  background-color: #314E89;
+}
+
+.messenger {
+  color: #FFFFFF;
+}
+.messenger.bg-color {
+  background-color: #0078FF;
+}
+.messenger:hover {
+  color: #FFFFFF;
+  background-color: #0063D1;
+}
+
+.whatsapp {
+  color: #FFFFFF;
+}
+.whatsapp.bg-color {
+  background-color: #22c35e;
+}
+.whatsapp:hover {
+  color: #FFFFFF;
+  background-color: #179848;
+}
+
+.twitter {
+  color: #FFFFFF;
+}
+.twitter.bg-color {
+  background-color: #1DA1F2;
+}
+.twitter:hover {
+  color: #FFFFFF;
+  background-color: #1A94DA;
+}
+
 .center {
   justify-content: center;
   text-align: center;
@@ -875,6 +1058,10 @@ ol {
 
 .mg-bot-20 {
   margin-bottom: 20px;
+}
+
+.mg-bot-50 {
+  margin-bottom: 50px;
 }
 
 .mg-l-10 {
@@ -926,6 +1113,22 @@ img.img_rounded {
 
 .font-large {
   font-size: 1.2rem;
+}
+
+.xs {
+  width: 5% !important;
+}
+
+.sm {
+  width: 10% !important;
+}
+
+.md {
+  width: 20% !important;
+}
+
+.lg {
+  width: 250px !important;
 }
 
 /*# sourceMappingURL=all.css.map */

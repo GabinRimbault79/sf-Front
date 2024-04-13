@@ -10,8 +10,8 @@ class MainIndex extends Component {
                     <Content classContent={"center"}>SF-FRONT is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications</Content>
                 </Wrapper>
                 <Wrapper classWrapper={"center mg-top-10"}>
-                    <Button href={"/install"} classBtn={"btn primary"}>Get Started <i className="fa-solid fa-arrow-right"></i></Button>
-                    <Button href={"#"} classBtn={"btn secondary"}>Git Hub <i className="fa-brands fa-github"></i></Button>
+                    <Button size={"md"} href={"/install"} classBtn={"btn primary bg-color"}>Get Started <i className="fa-solid fa-arrow-right"></i></Button>
+                    <Button size={"md"} href={"#"} classBtn={"btn secondary bg-color"}>Git Hub <i className="fa-brands fa-github"></i></Button>
                 </Wrapper>
                 <hr/>
                 <Wrapper>

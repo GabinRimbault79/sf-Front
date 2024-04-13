@@ -1,14 +1,62 @@
 import React, {Component} from 'react';
-import {Code, Content, Title, Wrapper, WrapperExample} from "../../../lib";
+import {Code, Content, Tag, Title, Wrapper, WrapperExample} from "../../../lib";
+import Accordion from "../../../lib/components/modules/General/Accordion/Accordion";
+import Table from "../../../lib/components/base/Table";
 
 class CodeBase extends Component {
     render() {
         return (
             <>
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Code</Title>
-                <Content>Use Code SF-FRONT</Content>
-                <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Example</Title>
-                <Content classContent={"mg-top-10 mg-bot-10"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu tortor sit amet libero maximus ullamcorper. Integer augue justo, porttitor sed lacinia non, congue et diam.</Content>
+                <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
+                <Code>
+                    {`import {Code} from "@gabinrimbault/sf-frontend"`}
+                </Code>
+                <hr/>
+                <Accordion>
+                    <Accordion.Title>
+                        <Title classTitle={"type3 mg-top-10"} lvl={"h3"}>Props</Title>
+                    </Accordion.Title>
+                    <Accordion.Body>
+                        <Tag classTag={"critical bg-color"}>classCode</Tag>
+                        <hr/>
+                        <Content classContent={"font-small"}>This prop is used to define the CSS class to apply to the code. It is optional (undefined by default).</Content>
+                        <Table classTable={"mg-bot-50"}>
+                            <thead>
+                            <tr>
+                                <th scope="col">Example</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    {`<Code classCode="myClass">My Code</Code>`}
+                                </td>
+                            </tr>
+                            </tbody>
+                        </Table>
+                        <Tag classTag={"critical bg-color"}>children</Tag>
+                        <hr/>
+                        <Content classContent={"font-small"}>This prop represents the content of the code.</Content>
+                        <Table classTable={"mg-bot-50"}>
+                            <thead>
+                            <tr>
+                                <th scope="col">Example</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    {`<Code>My Code</Code>`}
+                                </td>
+                            </tr>
+                            </tbody>
+                        </Table>
+                    </Accordion.Body>
+                </Accordion>
+                <hr/>
+                <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Usage</Title>
+                <Content classContent={"mg-top-10 mg-bot-10"}>The {`<Code>`} component displays pre-formatted content, such as source code, with a customizable CSS class to control its appearance.</Content>
                 <WrapperExample>
                     <WrapperExample.Component>
                         <Code>

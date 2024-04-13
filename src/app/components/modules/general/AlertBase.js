@@ -143,6 +143,70 @@ class AlertBase extends Component {
                          `}
                     </WrapperExample.Code>
                 </WrapperExample>
+                <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Alert Important</Title>
+                <Content classContent={"mg-top-10 mg-bot-10"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu tortor sit amet libero maximus ullamcorper. Integer augue justo, porttitor sed lacinia non, congue et diam.</Content>
+                <WrapperExample>
+                    <WrapperExample.Component>
+                        <Alert classAlert={"success bg-color important"} name={"success"}>
+                            Success
+                        </Alert>
+                        <Alert classAlert={"warning bg-color important"} name={"warning"}>
+                            Warning
+                        </Alert>
+                        <Alert classAlert={"critical bg-color important"} name={"critical"}>
+                            Critical
+                        </Alert>
+                        <Alert classAlert={"infos bg-color important"} name={"infos"}>
+                            Infos
+                        </Alert>
+                    </WrapperExample.Component>
+                    <WrapperExample.Code>
+                        {`<Alert classAlert={"success bg-color important"} name={"success"}>
+    Success
+</Alert>
+<Alert classAlert={"warning bg-color important"} name={"warning"}>
+    Warning
+</Alert>
+<Alert classAlert={"critical bg-color important"} name={"critical"}>
+    Critical
+</Alert>
+<Alert classAlert={"infos bg-color important"} name={"infos"}>
+    Infos
+</Alert>`}
+                    </WrapperExample.Code>
+                </WrapperExample>
+                <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Alert Bordered</Title>
+                <Content classContent={"mg-top-10 mg-bot-10"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu tortor sit amet libero maximus ullamcorper. Integer augue justo, porttitor sed lacinia non, congue et diam.</Content>
+                <WrapperExample>
+                    <WrapperExample.Component>
+                        <Alert classAlert={"success bg-color border"} name={"success"}>
+                            Success
+                        </Alert>
+                        <Alert classAlert={"warning bg-color border"} name={"warning"}>
+                            Warning
+                        </Alert>
+                        <Alert classAlert={"critical bg-color border"} name={"critical"}>
+                            Critical
+                        </Alert>
+                        <Alert classAlert={"infos bg-color border"} name={"infos"}>
+                            Infos
+                        </Alert>
+                    </WrapperExample.Component>
+                    <WrapperExample.Code>
+                        {`<Alert classAlert={"success bg-color border"} name={"success"}>
+    Success
+</Alert>
+<Alert classAlert={"warning bg-color border"} name={"warning"}>
+    Warning
+</Alert>
+<Alert classAlert={"critical bg-color border"} name={"critical"}>
+    Critical
+</Alert>
+<Alert classAlert={"infos bg-color border"} name={"infos"}>
+    Infos
+</Alert>`}
+                    </WrapperExample.Code>
+                </WrapperExample>
             </>
         );
     }
