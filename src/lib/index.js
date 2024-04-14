@@ -29,6 +29,7 @@ import SideBar from "./components/modules/Navigation/SideBar/SideBar";
 import Table from "./components/base/Table";
 import Accordion from "./components/modules/General/Accordion/Accordion";
 import ButtonGrp from "./components/base/ButtonGrp";
+import Tooltip from "./components/modules/Information/Tooltip/Tooltip";
 
 
 export {
@@ -62,5 +63,6 @@ export {
     SideBar,
     Table,
     Accordion,
-    ButtonGrp
+    ButtonGrp,
+    Tooltip
 }

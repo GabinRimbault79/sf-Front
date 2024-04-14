@@ -1,7 +1,5 @@
 import React from "react";
 import List from "../../../base/List";
-import SideBar from "../SideBar/SideBar";
-import Tag from "../../../base/Tag";
 
 export default function HeadBar({ classHeadBar, classLink = "liseret", data, icons }) {
   const style = classHeadBar ? "headbar " + classHeadBar : "headbar";
@@ -27,7 +25,7 @@ export default function HeadBar({ classHeadBar, classLink = "liseret", data, ico
     <header className={style}>
       <nav>
         <div className={"logo_content"}>
-          <i className="fa-brands fa-drupal"></i> SF
+          <i className="fa-brands fa-react"></i> SF
         </div>
         <List type={"ul"} classLink={classLink} data={listNav} />
         <div className={"social_content"}>
