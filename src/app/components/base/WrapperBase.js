@@ -16,7 +16,7 @@ class WrapperBase extends Component {
                         <Title classTitle={"type3 mg-top-10"} lvl={"h3"}>Props</Title>
                     </Accordion.Title>
                     <Accordion.Body>
-                        <Tag classTag={"warning bg-color"}>classWrapper</Tag>
+                        <Tag classTag={"critical bg-color"}>classWrapper</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `classWrapper` prop allows you to specify additional CSS classes to style the wrapper {`<div>`} element.
@@ -34,18 +34,9 @@ class WrapperBase extends Component {
                                     {`<Wrapper classWrapper="custom-wrapper">...</Wrapper>`}
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    {`
-            <Wrapper classWrapper="another-wrapper" style={{ backgroundColor: "lightgray" }}>
-              ...
-            </Wrapper>
-            `}
-                                </td>
-                            </tr>
                             </tbody>
                         </Table>
-                        <Tag classTag={"warning bg-color"}>children</Tag>
+                        <Tag classTag={"critical bg-color"}>children</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `children` prop represents the content that will be wrapped inside the {`<Wrapper>`} component.
@@ -61,20 +52,8 @@ class WrapperBase extends Component {
                             <tr>
                                 <td>
                                     {`
-            <Wrapper classWrapper="custom-wrapper">
-              <p>This is wrapped content.</p>
-            </Wrapper>
-            `}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    {`
-            <Wrapper classWrapper="another-wrapper">
-              <div>
-                <h2>Another Wrapped Content</h2>
-                <p>This content is wrapped in a styled wrapper.</p>
-              </div>
+            <Wrapper>
+              <Content>This is wrapped content.</Content>
             </Wrapper>
             `}
                                 </td>

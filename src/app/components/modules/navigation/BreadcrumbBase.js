@@ -1,14 +1,29 @@
 import React, {Component} from 'react';
-import {Accordion, Code, Content, Table, Tag, Title, WrapperExample} from "../../../../lib";
+import {Accordion, Breadcrumb, Code, Content, Table, Tag, Title, WrapperExample} from "../../../../lib";
 
-class AccordionBase extends Component {
+const BreadData = {
+    home: {
+        liens: ["/", "Index"],
+    },
+    joinus: {
+        liens: ["/joinus", "JoinUS"]
+    },
+    install: {
+        liens: ["/install", "Install"]
+    },
+    doc: {
+        liens: ["/doc", "Documentation"]
+    }
+};
+
+class BreadcrumbBase extends Component {
     render() {
         return (
             <>
-                <Title classTitle={"type1 heading"} lvl={"h1"}>Accordion</Title>
+                <Title classTitle={"type1 heading"} lvl={"h1"}>BreadCrumb</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Accordion} from "@gabinrimbault/sf-frontend"`}
+                    {`import {BreadCrumb} from "@gabinrimbault/sf-frontend"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -51,32 +66,24 @@ class AccordionBase extends Component {
                 <Content classContent={"mg-top-10 mg-bot-10"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu tortor sit amet libero maximus ullamcorper. Integer augue justo, porttitor sed lacinia non, congue et diam.</Content>
                 <WrapperExample>
                     <WrapperExample.Component>
-                        <Accordion>
-                            <Accordion.Title>Section 1</Accordion.Title>
-                            <Accordion.Body>
-                                <p>Contenu de la section 1...</p>
-                            </Accordion.Body>
-                        </Accordion>
-                        <Accordion>
-                            <Accordion.Title>Section 2</Accordion.Title>
-                            <Accordion.Body>
-                                <p>Contenu de la section 2...</p>
-                            </Accordion.Body>
-                        </Accordion>
+                        <Breadcrumb dataNav={BreadData} />
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`<Accordion>
-    <Accordion.Title>Section 1</Accordion.Title>
-    <Accordion.Body>
-        <p>Contenu de la section 1...</p>
-    </Accordion.Body>
-</Accordion>
-<Accordion>
-    <Accordion.Title>Section 2</Accordion.Title>
-    <Accordion.Body>
-        <p>Contenu de la section 2...</p>
-    </Accordion.Body>
-</Accordion>`}
+                        {`const BreadData = {
+    home: {
+        liens: ["/", "Index"],
+    },
+    joinus: {
+        liens: ["/joinus", "JoinUS"]
+    },
+    install: {
+        liens: ["/install", "Install"]
+    },
+    doc: {
+        liens: ["/doc", "Documentation"]
+    }
+};
+<Breadcrumb dataNav={BreadData} />`}
                     </WrapperExample.Code>
                 </WrapperExample>
             </>
@@ -84,4 +91,4 @@ class AccordionBase extends Component {
     }
 }
 
-export default AccordionBase;
+export default BreadcrumbBase;

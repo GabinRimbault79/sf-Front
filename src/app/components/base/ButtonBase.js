@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {WrapperExample, Button, Title, Content, Code, Wrapper, SideBar, Tag, Alert, ButtonGrp} from "../../../lib";
+import {WrapperExample, Button, Title, Content, Code, Tag, ButtonGrp} from "../../../lib";
 import Accordion from "../../../lib/components/modules/General/Accordion/Accordion";
 import Table from "../../../lib/components/base/Table";
 
@@ -145,6 +145,7 @@ class ButtonBase extends Component {
                 <WrapperExample>
                     <WrapperExample.Component>
                         <Button size={"md"} classBtn={"primary bg-color"}>Primary</Button>
+                        <Button size={"md"} classBtn={"primary bg-color"}>DarkMode</Button>
                         <Button size={"md"} classBtn={"secondary bg-color"}>Secondary</Button>
                         <Button size={"md"} classBtn={"success bg-color"}>Success</Button>
                         <Button size={"md"} classBtn={"warning bg-color"}>Warning</Button>

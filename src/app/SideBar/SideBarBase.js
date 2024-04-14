@@ -15,42 +15,42 @@ class SideBarBase extends Component {
                     </Accordion.Title>
                     <Accordion.Body>
                         <SideBar.Item>
-                            <SideBar.Link link={"/button"}>
+                            <SideBar.Link link={"/doc/button"}>
                                 Button
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/code"}>
+                            <SideBar.Link link={"/doc/code"}>
                                 Code
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/content"}>
+                            <SideBar.Link link={"/doc/content"}>
                                 Content
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/img"}>
+                            <SideBar.Link link={"/doc/img"}>
                                 Images
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/list"}>
+                            <SideBar.Link link={"/doc/list"}>
                                 List
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/tag"}>
+                            <SideBar.Link link={"/doc/tag"}>
                                 Tag
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/title"}>
+                            <SideBar.Link link={"/doc/title"}>
                                 Title
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/wrapper"}>
+                            <SideBar.Link link={"/doc/wrapper"}>
                                 Wrapper
                             </SideBar.Link>
                         </SideBar.Item>

@@ -1,14 +1,50 @@
 import React, {Component} from 'react';
-import {Accordion, Code, Content, Table, Tag, Title, WrapperExample} from "../../../../lib";
+import {
+    Accordion,
+    Code,
+    Content,
+    HeadBar,
+    Table,
+    Tag,
+    Title,
+    WrapperExample
+} from "../../../../lib";
 
-class AccordionBase extends Component {
+const headBarData = {
+    home: {
+        liens: ["/", "Index"],
+    },
+    joinus: {
+        liens: ["/joinus", "JoinUS"]
+    },
+    install: {
+        liens: ["/install", "Install"]
+    },
+    doc: {
+        liens: ["/doc", "Documentation"]
+    }
+};
+
+const headBarIcons = {
+    twitter: {
+        liens: ["#", <i className="fa-brands fa-square-twitter"></i>]
+    },
+    github: {
+        liens: ["#", <i className="fa-brands fa-square-github"></i>]
+    },
+    tag: {
+        liens: ["#", <Tag classTag={"infos bg-color font-small"}>v 1.0.0</Tag>]
+    }
+}
+
+class HeadbarBase extends Component {
     render() {
         return (
             <>
-                <Title classTitle={"type1 heading"} lvl={"h1"}>Accordion</Title>
+                <Title classTitle={"type1 heading"} lvl={"h1"}>Headbar</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Accordion} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Headbar} from "@gabinrimbault/sf-frontend"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -51,32 +87,20 @@ class AccordionBase extends Component {
                 <Content classContent={"mg-top-10 mg-bot-10"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu tortor sit amet libero maximus ullamcorper. Integer augue justo, porttitor sed lacinia non, congue et diam.</Content>
                 <WrapperExample>
                     <WrapperExample.Component>
-                        <Accordion>
-                            <Accordion.Title>Section 1</Accordion.Title>
-                            <Accordion.Body>
-                                <p>Contenu de la section 1...</p>
-                            </Accordion.Body>
-                        </Accordion>
-                        <Accordion>
-                            <Accordion.Title>Section 2</Accordion.Title>
-                            <Accordion.Body>
-                                <p>Contenu de la section 2...</p>
-                            </Accordion.Body>
-                        </Accordion>
+                        <HeadBar data={headBarData} />
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`<Accordion>
-    <Accordion.Title>Section 1</Accordion.Title>
-    <Accordion.Body>
-        <p>Contenu de la section 1...</p>
-    </Accordion.Body>
-</Accordion>
-<Accordion>
-    <Accordion.Title>Section 2</Accordion.Title>
-    <Accordion.Body>
-        <p>Contenu de la section 2...</p>
-    </Accordion.Body>
-</Accordion>`}
+                        {`<HeadBar data={headBarData} />`}
+                    </WrapperExample.Code>
+                </WrapperExample>
+                <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>HeadBar Icons</Title>
+                <Content classContent={"mg-top-10 mg-bot-10"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu tortor sit amet libero maximus ullamcorper. Integer augue justo, porttitor sed lacinia non, congue et diam.</Content>
+                <WrapperExample>
+                    <WrapperExample.Component>
+                        <HeadBar data={headBarData} icons={headBarIcons} />
+                    </WrapperExample.Component>
+                    <WrapperExample.Code>
+                        {`<HeadBar data={headBarData} icons={headBarIcons} />`}
                     </WrapperExample.Code>
                 </WrapperExample>
             </>
@@ -84,4 +108,4 @@ class AccordionBase extends Component {
     }
 }
 
-export default AccordionBase;
+export default HeadbarBase;
