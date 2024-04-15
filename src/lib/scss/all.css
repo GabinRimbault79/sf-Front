@@ -298,7 +298,6 @@ ul.list_link li, ol.list_link li {
 
 .lame {
   width: 100%;
-  margin: 20px 0 0 0;
   padding: 0 0 20px 0;
   display: flex;
   flex-direction: column;

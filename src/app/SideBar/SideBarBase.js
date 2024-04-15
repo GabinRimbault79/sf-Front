@@ -35,8 +35,18 @@ class SideBarBase extends Component {
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
+                            <SideBar.Link link={"/doc/lame"}>
+                                Lame
+                            </SideBar.Link>
+                        </SideBar.Item>
+                        <SideBar.Item>
                             <SideBar.Link link={"/doc/list"}>
                                 List
+                            </SideBar.Link>
+                        </SideBar.Item>
+                        <SideBar.Item>
+                            <SideBar.Link link={"/doc/table"}>
+                                Table
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>

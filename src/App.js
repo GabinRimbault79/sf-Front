@@ -19,7 +19,7 @@ const headBarData = {
         liens: ["/joinus", "JoinUS"]
     },
     install: {
-        liens: ["/install", "QuickStart"]
+        liens: ["/doc/install", "QuickStart"]
     },
     doc: {
         liens: ["/doc", "Documentation"]

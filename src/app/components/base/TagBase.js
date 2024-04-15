@@ -31,16 +31,7 @@ class TagBase extends Component {
                             <tbody>
                             <tr>
                                 <td>
-                                    {`<Tag classTag="badge">Hello World</Tag>`}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    {`
-            <Tag classTag="badge">
-              <Button>Click Me</Button>
-            </Tag>
-            `}
+                                    {`<Tag>Hello World</Tag>`}
                                 </td>
                             </tr>
                             </tbody>
@@ -60,7 +51,7 @@ class TagBase extends Component {
                             <tbody>
                             <tr>
                                 <td>
-                                    {`<Tag classTag="badge">Hello World</Tag>`}
+                                    {`<Tag classTag="primary bg-color">Hello World</Tag>`}
                                 </td>
                             </tr>
                             </tbody>
@@ -80,7 +71,7 @@ class TagBase extends Component {
                             <tbody>
                             <tr>
                                 <td>
-                                    {`<Tag classTag="badge" linkTag="/example">Click Here</Tag>`}
+                                    {`<Tag linkTag="/example">Click Here</Tag>`}
                                 </td>
                             </tr>
                             </tbody>

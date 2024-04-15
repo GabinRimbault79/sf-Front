@@ -27,6 +27,8 @@ import SidebarBase from "../components/modules/navigation/SidebarBase";
 import BlocInformationBase from "../components/modules/information/BlocInformationBase";
 import TooltipBase from "../components/modules/information/TooltipBase";
 import WrapperIntro from "./WrapperIntro";
+import LameBase from "../components/base/LameBase";
+import TableBase from "../components/base/TableBase";
 
 class MainContent extends Component {
     render() {
@@ -34,7 +36,7 @@ class MainContent extends Component {
             <Wrapper>
                 <Routes>
                     <Route path="/" element={<MainIndex />} />
-                    <Route path="/intro" element={<WrapperIntro />} />
+                    <Route path="/doc/intro" element={<WrapperIntro />} />
                     <Route path="/joinus" element={<WrapperJoinUs />} />
                     <Route path="/doc" element={<WrapperDoc />} />
                     <Route path="/doc/install" element={<WrapperInstall />} />
@@ -42,7 +44,9 @@ class MainContent extends Component {
                     <Route path="/doc/code" element={<CodeBase />} />
                     <Route path="/doc/content" element={<ContentBase />} />
                     <Route path="/doc/img" element={<ImgBase />} />
+                    <Route path="/doc/lame" element={<LameBase />} />
                     <Route path="/doc/list" element={<ListBase />} />
+                    <Route path="/doc/table" element={<TableBase />} />
                     <Route path="/doc/tag" element={<TagBase />} />
                     <Route path="/doc/title" element={<TitleBase />} />
                     <Route path="/doc/wrapper" element={<WrapperBase />} />

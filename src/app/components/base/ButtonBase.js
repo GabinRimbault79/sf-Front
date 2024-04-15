@@ -73,7 +73,7 @@ class ButtonBase extends Component {
                             <tbody>
                             <tr>
                                 <td>
-                                    {`<Button href="/about" variant="link">Learn More</Button>`}
+                                    {`<Button href="/about">Learn More</Button>`}
                                 </td>
                             </tr>
                             </tbody>
@@ -145,7 +145,6 @@ class ButtonBase extends Component {
                 <WrapperExample>
                     <WrapperExample.Component>
                         <Button size={"md"} classBtn={"primary bg-color"}>Primary</Button>
-                        <Button size={"md"} classBtn={"primary bg-color"}>DarkMode</Button>
                         <Button size={"md"} classBtn={"secondary bg-color"}>Secondary</Button>
                         <Button size={"md"} classBtn={"success bg-color"}>Success</Button>
                         <Button size={"md"} classBtn={"warning bg-color"}>Warning</Button>
@@ -179,48 +178,48 @@ class ButtonBase extends Component {
                 <Content classContent={"mg-top-10 mg-bot-10"}>The "href" attribute is used to specify the destination to which the link should navigate when clicked.</Content>
                 <WrapperExample>
                     <WrapperExample.Component>
-                        <Button href={"#"} classBtn={"btn primary bg-color"}>Click Me</Button>
+                        <Button href={"#"} classBtn={"primary bg-color"}>Click Me</Button>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`<Button href={"#"} classBtn={"btn primary bg-color"}>Click Me</Button>`}
+                        {`<Button href={"#"} classBtn={"primary bg-color"}>Click Me</Button>`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Button with Icons</Title>
                 <Content classContent={"mg-top-10 mg-bot-10"}>Using the appropriate syntax, one can add Font Awesome icons alongside the button text.</Content>
                 <WrapperExample>
                     <WrapperExample.Component>
-                        <Button size={"md"} classBtn={"btn primary bg-color"}><i className="fa-solid fa-house"></i> Click Me</Button>
-                        <Button size={"md"} classBtn={"btn primary bg-color"}>Get Started <i className="fa-solid fa-arrow-right"></i></Button>
+                        <Button size={"md"} classBtn={"primary bg-color"}><i className="fa-solid fa-house"></i> Click Me</Button>
+                        <Button size={"md"} classBtn={"primary bg-color"}>Get Started <i className="fa-solid fa-arrow-right"></i></Button>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`<Button classBtn={"btn primary bg-color"}><i className="fa-solid fa-house"></i> Click Me</Button>
-<Button classBtn={"btn primary bg-color"}>Get Started <i className="fa-solid fa-arrow-right"></i></Button>`}
+                        {`<Button classBtn={"primary bg-color"}><i className="fa-solid fa-house"></i> Click Me</Button>
+<Button classBtn={"primary bg-color"}>Get Started <i className="fa-solid fa-arrow-right"></i></Button>`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Button Disabled</Title>
                 <Content classContent={"mg-top-10 mg-bot-10"}>The "disabled" class is used to visually disable the button, indicating that it is inactive.</Content>
                 <WrapperExample>
                     <WrapperExample.Component>
-                        <Button classBtn={"btn disabled primary bg-color"}>Click Me</Button>
+                        <Button classBtn={"disabled primary bg-color"}>Click Me</Button>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`<Button classBtn={"btn disabled primary bg-color"}>Click Me</Button>`}
+                        {`<Button classBtn={"disabled primary bg-color"}>Click Me</Button>`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Button Size</Title>
                 <Content classContent={"mg-top-10 mg-bot-10"}>The prop size is used to determine the visual dimensions of the button: "xs" for extra small, "sm" for small, "md" for medium, or "lg" for large, affecting the button's appearance and size.</Content>
                 <WrapperExample>
                     <WrapperExample.Component>
-                        <Button classBtn={"btn primary bg-color"} size={"xs"}>XS</Button>
-                        <Button classBtn={"btn primary bg-color"} size={"sm"}>SM</Button>
-                        <Button classBtn={"btn primary bg-color"} size={"md"}>MD</Button>
-                        <Button classBtn={"btn primary bg-color"} size={"lg"}>LG</Button>
+                        <Button classBtn={"primary bg-color"} size={"xs"}>XS</Button>
+                        <Button classBtn={"primary bg-color"} size={"sm"}>SM</Button>
+                        <Button classBtn={"primary bg-color"} size={"md"}>MD</Button>
+                        <Button classBtn={"primary bg-color"} size={"lg"}>LG</Button>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`<Button classBtn={"btn primary bg-color"} size={"xs"}>XS</Button>
-<Button classBtn={"btn primary bg-color"} size={"sm"}>SM</Button>
-<Button classBtn={"btn primary bg-color"} size={"md"}>MD</Button>
-<Button classBtn={"btn primary bg-color"} size={"lg"}>LG</Button>`}
+                        {`<Button classBtn={"primary bg-color"} size={"xs"}>XS</Button>
+<Button classBtn={"primary bg-color"} size={"sm"}>SM</Button>
+<Button classBtn={"primary bg-color"} size={"md"}>MD</Button>
+<Button classBtn={"primary bg-color"} size={"lg"}>LG</Button>`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Button Color</Title>

@@ -15,7 +15,7 @@ class SideBarStarted extends Component {
                     </Accordion.Title>
                     <Accordion.Body>
                         <SideBar.Item>
-                            <SideBar.Link link={"/intro"}>
+                            <SideBar.Link link={"/doc/intro"}>
                                 Introduction
                             </SideBar.Link>
                         </SideBar.Item>
@@ -25,12 +25,17 @@ class SideBarStarted extends Component {
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/doc/license"}>
+                            <SideBar.Link link={"https://github.com/GabinRimbault79/sf-Front/releases"}>
+                                Release
+                            </SideBar.Link>
+                        </SideBar.Item>
+                        <SideBar.Item>
+                            <SideBar.Link link={"https://github.com/GabinRimbault79/sf-Front/blob/main/LICENSE"}>
                                 License
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/doc/changelog"}>
+                            <SideBar.Link link={"https://github.com/GabinRimbault79/sf-Front/tree/main/Doc"}>
                                 Changelog
                             </SideBar.Link>
                         </SideBar.Item>
