@@ -1,6 +1,6 @@
 {
   "name": "simpleframework-front",
-  "version": "0.11.0",
+  "version": "0.11.3",
   "description": "SimpleFrameworks Front-End",
   "private": false,
   "main": "dist/index.js",
@@ -11,10 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GabinRimbault/sf-front.git"
+    "url": "git+https://github.com/GabinRimbault79/sf-Front"
   },
   "bugs": {
-    "url": "https://github.com/GabinRimbault/sf-front/issues"
+    "url": "https://github.com/GabinRimbault79/sf-Front/issues"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
