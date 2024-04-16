@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Accordion, Code, Content, List, Table, Tag, Title, Wrapper, WrapperExample} from "../../../lib";
+import {Accordion, Code, Content, List, Table, Tag, Title, WrapperExample} from "../../../lib";
 const data = ["Pomme", "Banane", "Orange"];
 const link = {
     about: {
@@ -57,7 +57,7 @@ class ListBase extends Component {
                         <Title classTitle={"type3 mg-top-10"} lvl={"h3"}>Props</Title>
                     </Accordion.Title>
                     <Accordion.Body>
-                        <Tag classTag={"warning bg-color"}>type</Tag>
+                        <Tag classTag={"critical bg-color"}>type</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `type` prop specifies the type of list to render.
@@ -83,7 +83,7 @@ class ListBase extends Component {
                             </tr>
                             </tbody>
                         </Table>
-                        <Tag classTag={"warning bg-color"}>data</Tag>
+                        <Tag classTag={"critical bg-color"}>data</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `data` prop specifies the content of the list.
@@ -116,7 +116,7 @@ class ListBase extends Component {
                             </tr>
                             </tbody>
                         </Table>
-                        <Tag classTag={"warning bg-color"}>classList</Tag>
+                        <Tag classTag={"critical bg-color"}>classList</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `classList` prop allows you to specify additional CSS classes to apply to the {`<ul>`} or {`<ol>`} element.
@@ -136,7 +136,7 @@ class ListBase extends Component {
                             </tr>
                             </tbody>
                         </Table>
-                        <Tag classTag={"warning bg-color"}>classLink</Tag>
+                        <Tag classTag={"critical bg-color"}>classLink</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `classLink` prop allows you to specify additional CSS classes to apply to the {`<Link>`} components within list items.
@@ -211,6 +211,7 @@ class ListBase extends Component {
                 <WrapperExample>
                     <WrapperExample.Component>
                         <List data={icons} />
+                        <List classList={"list_link center"} data={icons} />
                     </WrapperExample.Component>
                     <WrapperExample.Code>
                         {`const icons = {
@@ -227,7 +228,8 @@ class ListBase extends Component {
         liens: ["#", <i className="fa-solid fa-envelope"></i>]
     }
 }
-<List data={icons} />`}
+<List data={icons} />
+<List classList={"list_link"} data={icons} />`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>List Icons</Title>

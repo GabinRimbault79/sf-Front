@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Accordion, Code, Content, Table, Tag, Title, Wrapper, WrapperExample} from "../../../lib";
+import {Accordion, Code, Content, Table, Tag, Title, WrapperExample} from "../../../lib";
 
 class TagBase extends Component {
     render() {
@@ -16,7 +16,7 @@ class TagBase extends Component {
                         <Title classTitle={"type3 mg-top-10"} lvl={"h3"}>Props</Title>
                     </Accordion.Title>
                     <Accordion.Body>
-                        <Tag classTag={"warning bg-color"}>children</Tag>
+                        <Tag classTag={"critical bg-color"}>children</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `children` prop represents the content to be displayed inside the {`<Tag>`} component.
@@ -31,21 +31,12 @@ class TagBase extends Component {
                             <tbody>
                             <tr>
                                 <td>
-                                    {`<Tag classTag="badge">Hello World</Tag>`}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    {`
-            <Tag classTag="badge">
-              <Button>Click Me</Button>
-            </Tag>
-            `}
+                                    {`<Tag>Hello World</Tag>`}
                                 </td>
                             </tr>
                             </tbody>
                         </Table>
-                        <Tag classTag={"warning bg-color"}>classTag</Tag>
+                        <Tag classTag={"critical bg-color"}>classTag</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `classTag` prop allows you to specify additional CSS classes to style the {`<span>`} element within the {`<Tag>`} component.
@@ -60,12 +51,12 @@ class TagBase extends Component {
                             <tbody>
                             <tr>
                                 <td>
-                                    {`<Tag classTag="badge">Hello World</Tag>`}
+                                    {`<Tag classTag="primary bg-color">Hello World</Tag>`}
                                 </td>
                             </tr>
                             </tbody>
                         </Table>
-                        <Tag classTag={"warning bg-color"}>linkTag</Tag>
+                        <Tag classTag={"critical bg-color"}>linkTag</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `linkTag` prop, if provided, transforms the content of the {`<Tag>`} component into a clickable link ({`<Link>`} from `react-router-dom`).
@@ -80,7 +71,7 @@ class TagBase extends Component {
                             <tbody>
                             <tr>
                                 <td>
-                                    {`<Tag classTag="badge" linkTag="/example">Click Here</Tag>`}
+                                    {`<Tag linkTag="/example">Click Here</Tag>`}
                                 </td>
                             </tr>
                             </tbody>

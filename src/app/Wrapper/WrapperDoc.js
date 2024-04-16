@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {Content, SideBar, Title} from "../../lib";
-import SideBarBase from "../SideBar/SideBarBase";
-import SideBarModules from "../SideBar/SideBarModules";
+import {Content, Title} from "../../lib";
 
 class WrapperDoc extends Component {
     render() {

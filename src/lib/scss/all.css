@@ -298,7 +298,6 @@ ul.list_link li, ol.list_link li {
 
 .lame {
   width: 100%;
-  margin: 20px 0 0 0;
   padding: 0 0 20px 0;
   display: flex;
   flex-direction: column;
@@ -355,9 +354,11 @@ table tr {
 
 .progress_bar .bar_style {
   background-color: #e9ecef;
+  border-radius: 25px;
 }
 .progress_bar .bar_style .bar_color {
   height: 100%;
+  border-radius: 25px;
 }
 
 .gpt-tabs {
@@ -514,6 +515,37 @@ table tr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: visible;
+  background-color: black;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
 }
 
 .bloc_product {
@@ -703,8 +735,6 @@ footer ul.social {
   display: inline-block;
   padding: 25px 20px;
   border-radius: 10px;
-  position: absolute;
-  top: 125px;
 }
 .sidebar li {
   padding: 5px;

@@ -19,6 +19,16 @@ import CardBase from "../components/modules/general/CardBase";
 import CarouselBase from "../components/modules/general/CarouselBase";
 import ProgressBarBase from "../components/modules/general/ProgressBarBase";
 import TabsBase from "../components/modules/general/TabsBase";
+import BreadcrumbBase from "../components/modules/navigation/BreadcrumbBase";
+import FooterBase from "../components/modules/navigation/FooterBase";
+import HeadbarBase from "../components/modules/navigation/HeadbarBase";
+import NavbarBase from "../components/modules/navigation/NavbarBase";
+import SidebarBase from "../components/modules/navigation/SidebarBase";
+import BlocInformationBase from "../components/modules/information/BlocInformationBase";
+import TooltipBase from "../components/modules/information/TooltipBase";
+import WrapperIntro from "./WrapperIntro";
+import LameBase from "../components/base/LameBase";
+import TableBase from "../components/base/TableBase";
 
 class MainContent extends Component {
     render() {
@@ -26,23 +36,33 @@ class MainContent extends Component {
             <Wrapper>
                 <Routes>
                     <Route path="/" element={<MainIndex />} />
+                    <Route path="/doc/intro" element={<WrapperIntro />} />
                     <Route path="/joinus" element={<WrapperJoinUs />} />
                     <Route path="/doc" element={<WrapperDoc />} />
-                    <Route path="/install" element={<WrapperInstall />} />
-                    <Route path="/button" element={<ButtonBase />} />
-                    <Route path="/code" element={<CodeBase />} />
-                    <Route path="/content" element={<ContentBase />} />
-                    <Route path="/img" element={<ImgBase />} />
-                    <Route path="/list" element={<ListBase />} />
-                    <Route path="/tag" element={<TagBase />} />
-                    <Route path="/title" element={<TitleBase />} />
-                    <Route path="/wrapper" element={<WrapperBase />} />
-                    <Route path="/accordion" element={<AccordionBase />} />
-                    <Route path="/alert" element={<AlertBase />} />
-                    <Route path="/cards" element={<CardBase />} />
-                    <Route path="/carousel" element={<CarouselBase />} />
-                    <Route path="/progressbar" element={<ProgressBarBase />} />
-                    <Route path="/tabs" element={<TabsBase />} />
+                    <Route path="/doc/install" element={<WrapperInstall />} />
+                    <Route path="/doc/button" element={<ButtonBase />} />
+                    <Route path="/doc/code" element={<CodeBase />} />
+                    <Route path="/doc/content" element={<ContentBase />} />
+                    <Route path="/doc/img" element={<ImgBase />} />
+                    <Route path="/doc/lame" element={<LameBase />} />
+                    <Route path="/doc/list" element={<ListBase />} />
+                    <Route path="/doc/table" element={<TableBase />} />
+                    <Route path="/doc/tag" element={<TagBase />} />
+                    <Route path="/doc/title" element={<TitleBase />} />
+                    <Route path="/doc/wrapper" element={<WrapperBase />} />
+                    <Route path="/doc/accordion" element={<AccordionBase />} />
+                    <Route path="/doc/alert" element={<AlertBase />} />
+                    <Route path="/doc/cards" element={<CardBase />} />
+                    <Route path="/doc/carousel" element={<CarouselBase />} />
+                    <Route path="/doc/progressbar" element={<ProgressBarBase />} />
+                    <Route path="/doc/tabs" element={<TabsBase />} />
+                    <Route path="/doc/breadcrumb" element={<BreadcrumbBase />} />
+                    <Route path="/doc/footer" element={<FooterBase />} />
+                    <Route path="/doc/headbar" element={<HeadbarBase />} />
+                    <Route path="/doc/navbar" element={<NavbarBase />} />
+                    <Route path="/doc/sidebar" element={<SidebarBase />} />
+                    <Route path="/doc/blocinformation" element={<BlocInformationBase />} />
+                    <Route path="/doc/tooltip" element={<TooltipBase />} />
                 </Routes>
             </Wrapper>
         );

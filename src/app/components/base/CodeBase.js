@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Code, Content, Tag, Title, Wrapper, WrapperExample} from "../../../lib";
+import {Code, Content, Tag, Title, WrapperExample} from "../../../lib";
 import Accordion from "../../../lib/components/modules/General/Accordion/Accordion";
 import Table from "../../../lib/components/base/Table";
 
@@ -65,6 +65,38 @@ class CodeBase extends Component {
                     </WrapperExample.Component>
                     <WrapperExample.Code>
                         {`<Code>
+    npm i @gabinrimbault/sf-frontend
+</Code>`}
+                    </WrapperExample.Code>
+                </WrapperExample>
+                <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Colors</Title>
+                <Content classContent={"mg-top-10 mg-bot-10"}>The {`<Code>`} component displays pre-formatted content, such as source code, with a customizable CSS class to control its appearance.</Content>
+                <WrapperExample>
+                    <WrapperExample.Component>
+                        <Code classCode={"success bg-color"}>
+                            npm i @gabinrimbault/sf-frontend
+                        </Code>
+                        <Code classCode={"critical bg-color"}>
+                            npm i @gabinrimbault/sf-frontend
+                        </Code>
+                        <Code classCode={"warning bg-color"}>
+                            npm i @gabinrimbault/sf-frontend
+                        </Code>
+                        <Code classCode={"infos bg-color"}>
+                            npm i @gabinrimbault/sf-frontend
+                        </Code>
+                    </WrapperExample.Component>
+                    <WrapperExample.Code>
+                        {`<Code classCode={"success bg-color"}>
+    npm i @gabinrimbault/sf-frontend
+</Code>
+<Code classCode={"critical bg-color"}>
+    npm i @gabinrimbault/sf-frontend
+</Code>
+<Code classCode={"warning bg-color"}>
+    npm i @gabinrimbault/sf-frontend
+</Code>
+<Code classCode={"infos bg-color"}>
     npm i @gabinrimbault/sf-frontend
 </Code>`}
                     </WrapperExample.Code>

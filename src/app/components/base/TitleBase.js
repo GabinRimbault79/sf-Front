@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Accordion, Code, Content, Table, Tag, Title, Wrapper, WrapperExample} from "../../../lib";
+import {Accordion, Code, Content, Table, Tag, Title, WrapperExample} from "../../../lib";
 
 class TitleBase extends Component {
     render() {
@@ -16,7 +16,7 @@ class TitleBase extends Component {
                         <Title classTitle={"type3 mg-top-10"} lvl={"h3"}>Props</Title>
                     </Accordion.Title>
                     <Accordion.Body>
-                        <Tag classTag={"warning bg-color"}>classTitle</Tag>
+                        <Tag classTag={"critical bg-color"}>classTitle</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `classTitle` prop allows you to specify additional CSS classes to style the rendered title element ({`<h1>`}, {`<h2>`}, {`<h3>`}, etc.).
@@ -31,19 +31,12 @@ class TitleBase extends Component {
                             <tbody>
                             <tr>
                                 <td>
-                                    {`<Title classTitle="main-title" lvl="h1">Welcome to My App</Title>`}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    {`
-            <Title classTitle="section-title" lvl="h2">Features</Title>
-            `}
+                                    {`<Title classTitle="main-title">Welcome to My App</Title>`}
                                 </td>
                             </tr>
                             </tbody>
                         </Table>
-                        <Tag classTag={"warning bg-color"}>lvl</Tag>
+                        <Tag classTag={"critical bg-color"}>lvl</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
                             The `lvl` prop specifies the level of the title to be rendered (e.g., `"h1"`, `"h2"`, `"h3"`, etc.).
@@ -59,13 +52,18 @@ class TitleBase extends Component {
                             <tbody>
                             <tr>
                                 <td>
-                                    {`<Title classTitle="section-title" lvl="h2">Features</Title>`}
+                                    {`<Title lvl="h1">Features</Title>`}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    {`<Title lvl="h2">Features</Title>`}
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     {`
-            <Title classTitle="sub-title" lvl="h3">Get Started</Title>
+            <Title lvl="h3">Get Started</Title>
             `}
                                 </td>
                             </tr>

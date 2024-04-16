@@ -1,14 +1,23 @@
 import React, {Component} from 'react';
-import {Accordion, Code, Content, Table, Tag, Title, WrapperExample} from "../../../../lib";
+import {
+    Accordion, Button,
+    Code,
+    Content,
+    Table,
+    Tag,
+    Title,
+    Tooltip,
+    WrapperExample
+} from "../../../../lib";
 
-class AccordionBase extends Component {
+class BlocInformationBase extends Component {
     render() {
         return (
             <>
-                <Title classTitle={"type1 heading"} lvl={"h1"}>Accordion</Title>
+                <Title classTitle={"type1 heading"} lvl={"h1"}>Tooltip</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Accordion} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Tooltip} from "@gabinrimbault/sf-frontend"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -51,32 +60,14 @@ class AccordionBase extends Component {
                 <Content classContent={"mg-top-10 mg-bot-10"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu tortor sit amet libero maximus ullamcorper. Integer augue justo, porttitor sed lacinia non, congue et diam.</Content>
                 <WrapperExample>
                     <WrapperExample.Component>
-                        <Accordion>
-                            <Accordion.Title>Section 1</Accordion.Title>
-                            <Accordion.Body>
-                                <p>Contenu de la section 1...</p>
-                            </Accordion.Body>
-                        </Accordion>
-                        <Accordion>
-                            <Accordion.Title>Section 2</Accordion.Title>
-                            <Accordion.Body>
-                                <p>Contenu de la section 2...</p>
-                            </Accordion.Body>
-                        </Accordion>
+                        <Tooltip text={"Tooltip Button"}>
+                            <Button size={"lg"} classBtn={"primary bg-color"}>Click Me</Button>
+                        </Tooltip>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`<Accordion>
-    <Accordion.Title>Section 1</Accordion.Title>
-    <Accordion.Body>
-        <p>Contenu de la section 1...</p>
-    </Accordion.Body>
-</Accordion>
-<Accordion>
-    <Accordion.Title>Section 2</Accordion.Title>
-    <Accordion.Body>
-        <p>Contenu de la section 2...</p>
-    </Accordion.Body>
-</Accordion>`}
+                        {`<Tooltip text={"Tooltip Button"}>
+    <Button size={"lg"} classBtn={"primary bg-color"}>Click Me</Button>
+</Tooltip>`}
                     </WrapperExample.Code>
                 </WrapperExample>
             </>
@@ -84,4 +75,4 @@ class AccordionBase extends Component {
     }
 }
 
-export default AccordionBase;
+export default BlocInformationBase;

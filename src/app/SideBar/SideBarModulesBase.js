@@ -3,7 +3,7 @@ import {SideBar} from "../../lib";
 import Accordion from "../../lib/components/modules/General/Accordion/Accordion";
 
 
-class SideBarModules extends Component {
+class SideBarModulesBase extends Component {
     render() {
         return (
             <>
@@ -15,32 +15,32 @@ class SideBarModules extends Component {
                     </Accordion.Title>
                     <Accordion.Body>
                         <SideBar.Item>
-                            <SideBar.Link link={"/accordion"}>
+                            <SideBar.Link link={"/doc/accordion"}>
                                 Accordion
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/alert"}>
+                            <SideBar.Link link={"/doc/alert"}>
                                 Alert
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/cards"}>
+                            <SideBar.Link link={"/doc/cards"}>
                                 Cards
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/carousel"}>
+                            <SideBar.Link link={"/doc/carousel"}>
                                 Carousel
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/progressbar"}>
+                            <SideBar.Link link={"/doc/progressbar"}>
                                 Progress Bar
                             </SideBar.Link>
                         </SideBar.Item>
                         <SideBar.Item>
-                            <SideBar.Link link={"/tabs"}>
+                            <SideBar.Link link={"/doc/tabs"}>
                                 Tabs
                             </SideBar.Link>
                         </SideBar.Item>
@@ -51,4 +51,4 @@ class SideBarModules extends Component {
     }
 }
 
-export default SideBarModules;
+export default SideBarModulesBase;
