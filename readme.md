@@ -1,12 +1,12 @@
 # 🚀 Welcome to the SF Project - FrontEnd 👋
 
-[![Branch](https://img.shields.io/static/v1?label=Branch&message=master&color=blue)](https://gitlab.com/GabinRimbault/template_project)  [![Version](https://img.shields.io/static/v1?label=Version&message=0.11.0&color=blue)](https://gitlab.com/GabinRimbault/template_project) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Frimbault_gabin)](https://twitter.com/rimbault_gabin)
+[![Branch](https://img.shields.io/static/v1?label=Branch&message=master&color=blue)](https://gitlab.com/GabinRimbault/template_project)  [![Version](https://img.shields.io/static/v1?label=Version&message=0.11.1&color=blue)](https://gitlab.com/GabinRimbault/template_project) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Frimbault_gabin)](https://twitter.com/rimbault_gabin)
 
 ## Community 🚀
 - We need your feedback and support for the [future](https://github.com/GabinRimbault/sf-front/discussions/4) 🚀.
 
 ## New VERSION
-- [0.11.0](Doc/v0.11.0)
+- [0.11.1](Doc/v0.11.1)
 
 Are you looking to add a new dimension to your React projects? Look no further! Our React library is the ultimate tool to boost your front-end development.
 
@@ -34,12 +34,12 @@ Join the front-end development revolution with the React Library. The future of 
 
 **Requis :** You need to have the latest version of the SF-Front.
 
-	npm i sf-front
+	npm i simpleframework-front
 
 ## Usage/Examples
 
 ```javascript
-import { Title } from 'sf-front'
+import { Title } from 'simpleframework-front'
 
 function App() {
   return <Title lvl="h1">My Title</Title>
@@ -51,13 +51,13 @@ function App() {
 Clone the project
 
 ```bash
-  git clone https://github.com/GabinRimbault/sf-front.git
+  git clone https://github.com/GabinRimbault79/sf-Front.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd sf-front
+  cd sf-Front
 ```
 
 Install dependencies
@@ -107,5 +107,5 @@ To see other color variables, please refer to the scss variables file.
 
 ## Authors
 
-- [@gabinrimbault](https://github.com/GabinRimbault)
+- [@gabinrimbault](https://github.com/GabinRimbault79)
 
