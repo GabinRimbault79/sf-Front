@@ -8,7 +8,7 @@ class AlertBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Alerts</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Alert} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Alert} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -163,26 +163,24 @@ class AlertBase extends Component {
                         </Alert>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`
-                            <Alert classAlert={"primary bg-color"} name={"primary"} cross={false}>
-                                Primary
-                            </Alert>
-                            <Alert classAlert={"secondary bg-color"} name={"secondary"} cross={false}>
-                                Secondary
-                            </Alert>
-                            <Alert classAlert={"success bg-color"} name={"success"} cross={false}>
-                                Success
-                            </Alert>
-                            <Alert classAlert={"warning bg-color"} name={"warning"} cross={false}>
-                                Warning
-                            </Alert>
-                            <Alert classAlert={"critical bg-color"} name={"critical"} cross={false}>
-                                Critical
-                            </Alert>
-                            <Alert classAlert={"infos bg-color"} name={"infos"} cross={false}>
-                                Infos
-                            </Alert>
-                         `}
+                        {`<Alert classAlert={"primary bg-color"} name={"primary"} cross={false}>
+    Primary
+</Alert>
+<Alert classAlert={"secondary bg-color"} name={"secondary"} cross={false}>
+    Secondary
+</Alert>
+<Alert classAlert={"success bg-color"} name={"success"} cross={false}>
+    Success
+</Alert>
+<Alert classAlert={"warning bg-color"} name={"warning"} cross={false}>
+    Warning
+</Alert>
+<Alert classAlert={"critical bg-color"} name={"critical"} cross={false}>
+    Critical
+</Alert>
+<Alert classAlert={"infos bg-color"} name={"infos"} cross={false}>
+    Infos
+</Alert>`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Alert Cross</Title>
@@ -209,26 +207,24 @@ class AlertBase extends Component {
                         </Alert>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`
-                            <Alert classAlert={"primary bg-color"} name={"primary"} cross={false}>
-                                Primary
-                            </Alert>
-                            <Alert classAlert={"secondary bg-color"} name={"secondary"} cross={false}>
-                                Secondary
-                            </Alert>
-                            <Alert classAlert={"success bg-color"} name={"success"} cross={false}>
-                                Success
-                            </Alert>
-                            <Alert classAlert={"warning bg-color"} name={"warning"} cross={false}>
-                                Warning
-                            </Alert>
-                            <Alert classAlert={"critical bg-color"} name={"critical"} cross={false}>
-                                Critical
-                            </Alert>
-                            <Alert classAlert={"infos bg-color"} name={"infos"} cross={false}>
-                                Infos
-                            </Alert>
-                         `}
+                        {`<Alert classAlert={"primary bg-color"} name={"primary"} cross={false}>
+    Primary
+</Alert>
+<Alert classAlert={"secondary bg-color"} name={"secondary"} cross={false}>
+    Secondary
+</Alert>
+<Alert classAlert={"success bg-color"} name={"success"} cross={false}>
+    Success
+</Alert>
+<Alert classAlert={"warning bg-color"} name={"warning"} cross={false}>
+    Warning
+</Alert>
+<Alert classAlert={"critical bg-color"} name={"critical"} cross={false}>
+    Critical
+</Alert>
+<Alert classAlert={"infos bg-color"} name={"infos"} cross={false}>
+    Infos
+</Alert>`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Alert with icons</Title>
@@ -243,14 +239,12 @@ class AlertBase extends Component {
                         </Alert>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`
-                            <Alert classAlert={"primary bg-color"} name={"primary"}>
-                                <i className="fa-solid fa-house"></i> Primary
-                            </Alert>
-                            <Alert classAlert={"infos bg-color"} name={"infos"}>
-                                <i className="fa-solid fa-circle-info"></i> Infos
-                            </Alert>
-                         `}
+                        {`<Alert classAlert={"primary bg-color"} name={"primary"}>
+    <i className="fa-solid fa-house"></i> Primary
+</Alert>
+<Alert classAlert={"infos bg-color"} name={"infos"}>
+    <i className="fa-solid fa-circle-info"></i> Infos
+</Alert>`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Alert with additional content</Title>
@@ -265,14 +259,12 @@ class AlertBase extends Component {
                         </Alert>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`
-                            <Alert classAlert={"primary bg-color"} name={"primary"} additionalContent={"Lorem Ipsum"}>
-                                Primary
-                            </Alert>
-                            <Alert classAlert={"infos bg-color"} name={"infos"} additionalContent={<Content>Lorem Ipsum with Content</Content>}>
-                                Infos
-                            </Alert>
-                         `}
+                        {`<Alert classAlert={"primary bg-color"} name={"primary"} additionalContent={"Lorem Ipsum"}>
+    Primary
+</Alert>
+<Alert classAlert={"infos bg-color"} name={"infos"} additionalContent={<Content>Lorem Ipsum with Content</Content>}>
+    Infos
+</Alert>`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Alert Important</Title>

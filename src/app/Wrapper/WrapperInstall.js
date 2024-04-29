@@ -8,17 +8,17 @@ class WrapperInstall extends Component {
                 <Title classTitle={"type2 heading"} lvl={"h2"}>Install</Title>
                 <Content classContent={"mg-bot-10"}>Requis you need to have the latest version of the SF-FRONT</Content>
                 <Code>
-                    npm i @gabinrimbault/sf-frontend
+                    npm i simpleframework-front
                 </Code>
                 <hr/>
                 <Title classTitle={"type2 heading"} lvl={"h2"}>Run Locally</Title>
                 <Content classContent={"mg-bot-10"}>Clone the project</Content>
                 <Code>
-                    git clone https://github.com/GabinRimbault/sf-front.git
+                    git clone https://github.com/GabinRimbault79/sf-Front.git
                 </Code>
                 <Content classContent={"mg-top-10 mg-bot-10"}>Go to the project directory</Content>
                 <Code>
-                    cd sf-front
+                    cd sf-Front
                 </Code>
                 <Content classContent={"mg-top-10 mg-bot-10"}>Install the project</Content>
                 <Code>

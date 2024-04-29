@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {Code, Content, Tag, Title, Wrapper, WrapperExample} from "../../../lib";
-import Accordion from "../../../lib/components/modules/General/Accordion/Accordion";
-import Table from "../../../lib/components/base/Table";
+import {Code, Content, Tag, Title, Accordion, Table, WrapperExample} from "../../../lib";
 
 class ContentBase extends Component {
     render() {

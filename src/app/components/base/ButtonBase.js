@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {WrapperExample, Button, Title, Content, Code, Tag, ButtonGrp} from "../../../lib";
-import Accordion from "../../../lib/components/modules/General/Accordion/Accordion";
-import Table from "../../../lib/components/base/Table";
+import {WrapperExample, Button, Title, Content, Code, Tag, ButtonGrp, Accordion, Table} from "../../../lib";
 
 class ButtonBase extends Component {
     render() {
@@ -10,7 +8,7 @@ class ButtonBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Buttons</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Button} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Button} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -286,15 +284,25 @@ class ButtonBase extends Component {
                 </WrapperExample>
                 <WrapperExample>
                     <WrapperExample.Component>
-                        <ButtonGrp spacing={0}>
+                        <ButtonGrp spacing={0} >
                             <Button variant={"outline"} size="sm" classBtn="success bg-color">Save</Button>
                             <Button variant={"outline"} size="xs" classBtn="success bg-color"><i className="fa-solid fa-plus"></i></Button>
+                        </ButtonGrp>
+                        <ButtonGrp spacing={0} >
+                            <Button size="sm" classBtn="disabled primary bg-color">Delete</Button>
+                            <Button size="sm" classBtn="success bg-color">Yes</Button>
+                            <Button size="sm" classBtn="critical bg-color">No</Button>
                         </ButtonGrp>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
                         {`<ButtonGrp spacing={0}>
     <Button variant={"outline"} size="sm" classBtn="success bg-color">Save</Button>
     <Button variant={"outline"} size="xs" classBtn="success bg-color"><i className="fa-solid fa-plus"></i></Button>
+</ButtonGrp>
+<ButtonGrp spacing={0} >
+    <Button size="sm" classBtn="disabled primary bg-color">Delete</Button>
+    <Button size="sm" classBtn="success bg-color">Yes</Button>
+    <Button size="sm" classBtn="critical bg-color">No</Button>
 </ButtonGrp>`}
                     </WrapperExample.Code>
                 </WrapperExample>

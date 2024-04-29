@@ -9,7 +9,7 @@ class BlocInformationBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>BlocInformation</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {BlocInformation} from "@gabinrimbault/sf-frontend"`}
+                    {`import {BlocInformation} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -17,7 +17,6 @@ class BlocInformationBase extends Component {
                         <Title classTitle={"type3 mg-top-10"} lvl={"h3"}>Props</Title>
                     </Accordion.Title>
                     <Accordion.Body>
-                        {/* Prop 'children' (used by Accordion.Title and Accordion.Body) */}
                         <Tag classTag={"critical bg-color"}>children</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
@@ -43,8 +42,6 @@ class BlocInformationBase extends Component {
                             </tr>
                             </tbody>
                         </Table>
-
-                        {/* No additional props specific to Accordion component */}
                     </Accordion.Body>
                 </Accordion>
                 <hr/>

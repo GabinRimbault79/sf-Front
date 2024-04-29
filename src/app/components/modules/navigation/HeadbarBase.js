@@ -44,7 +44,7 @@ class HeadbarBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Headbar</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Headbar} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Headbar} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -52,7 +52,6 @@ class HeadbarBase extends Component {
                         <Title classTitle={"type3 mg-top-10"} lvl={"h3"}>Props</Title>
                     </Accordion.Title>
                     <Accordion.Body>
-                        {/* Prop 'children' (used by Accordion.Title and Accordion.Body) */}
                         <Tag classTag={"critical bg-color"}>children</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
@@ -78,8 +77,6 @@ class HeadbarBase extends Component {
                             </tr>
                             </tbody>
                         </Table>
-
-                        {/* No additional props specific to Accordion component */}
                     </Accordion.Body>
                 </Accordion>
                 <hr/>
@@ -90,7 +87,22 @@ class HeadbarBase extends Component {
                         <HeadBar data={headBarData} />
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`<HeadBar data={headBarData} />`}
+                        {`const headBarData = {
+    home: {
+        liens: ["/", "Index"],
+    },
+    joinus: {
+        liens: ["/joinus", "JoinUS"]
+    },
+    install: {
+        liens: ["/install", "Install"]
+    },
+    doc: {
+        liens: ["/doc", "Documentation"]
+    }
+};
+
+<HeadBar data={headBarData} />`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>HeadBar Icons</Title>
@@ -100,7 +112,20 @@ class HeadbarBase extends Component {
                         <HeadBar data={headBarData} icons={headBarIcons} />
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`<HeadBar data={headBarData} icons={headBarIcons} />`}
+                        {`const headBarData = { ... };
+
+const headBarIcons = {
+    twitter: {
+        liens: ["#", <i className="fa-brands fa-square-twitter"></i>]
+    },
+    github: {
+        liens: ["#", <i className="fa-brands fa-square-github"></i>]
+    },
+    tag: {
+        liens: ["#", <Tag classTag={"infos bg-color font-small"}>v 1.0.0</Tag>]
+    }
+}
+<HeadBar data={headBarData} icons={headBarIcons} />`}
                     </WrapperExample.Code>
                 </WrapperExample>
             </>

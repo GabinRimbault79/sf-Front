@@ -8,7 +8,7 @@ class ProgressBarBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>ProgressBar</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Carousel} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Carousel} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -33,7 +33,6 @@ class ProgressBarBase extends Component {
                                 <td>
                                     {`
               <ProgressBar width={50}>
-                {/* Contenu de la barre de progression */}
               </ProgressBar>
             `}
                                 </td>
@@ -57,7 +56,6 @@ class ProgressBarBase extends Component {
                                 <td>
                                     {`
               <ProgressBar height="4px">
-                {/* Contenu de la barre de progression */}
               </ProgressBar>
             `}
                                 </td>
@@ -81,7 +79,6 @@ class ProgressBarBase extends Component {
                                 <td>
                                     {`
               <ProgressBar color="#00FF00">
-                {/* Contenu de la barre de progression */}
               </ProgressBar>
             `}
                                 </td>
@@ -105,7 +102,6 @@ class ProgressBarBase extends Component {
                                 <td>
                                     {`
               <ProgressBar classProgress="custom-progress">
-                {/* Contenu de la barre de progression */}
               </ProgressBar>
             `}
                                 </td>
@@ -126,13 +122,11 @@ class ProgressBarBase extends Component {
                         <ProgressBar classProgress={"mg-bot-10"} width={100} height={"10px"} color={"red"}>100%</ProgressBar>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`
-                            <ProgressBar width={10} height={"10px"} color={"blue"}>10%</ProgressBar>
-                            <ProgressBar width={25} height={"10px"} color={"yellow"}>25%</ProgressBar>
-                            <ProgressBar width={50} height={"10px"} color={"green"}>50%</ProgressBar>
-                            <ProgressBar width={75} height={"10px"} color={"orange"}>75%</ProgressBar>
-                            <ProgressBar width={100} height={"10px"} color={"red"}>100%</ProgressBar>
-                         `}
+                        {`<ProgressBar width={10} height={"10px"} color={"blue"}>10%</ProgressBar>
+<ProgressBar width={25} height={"10px"} color={"yellow"}>25%</ProgressBar>
+<ProgressBar width={50} height={"10px"} color={"green"}>50%</ProgressBar>
+<ProgressBar width={75} height={"10px"} color={"orange"}>75%</ProgressBar>
+<ProgressBar width={100} height={"10px"} color={"red"}>100%</ProgressBar>`}
                     </WrapperExample.Code>
                 </WrapperExample>
             </>

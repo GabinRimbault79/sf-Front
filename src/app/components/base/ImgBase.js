@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {Code, Content, Img, Tag, Title, Wrapper, WrapperExample} from "../../../lib";
-import Accordion from "../../../lib/components/modules/General/Accordion/Accordion";
-import Table from "../../../lib/components/base/Table";
+import {Code, Content, Img, Tag, Title, Accordion, Table, WrapperExample} from "../../../lib";
 
 class ImgBase extends Component {
     render() {
@@ -10,7 +8,7 @@ class ImgBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Images</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Img} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Img} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>

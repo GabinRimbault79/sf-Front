@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import {Content, Title} from "../../lib";
+import {Alert, Content, Title} from "../../lib";
 
 class WrapperIntro extends Component {
     render() {
         return (
             <>
-                <Content classContent={"mg-top-10"}>
-                    Are you looking to add a new dimension to your React projects? Look no further! Our React library is the ultimate tool to boost your front-end development. <br/>
-                </Content>
+                <Alert cross={false} classAlert={"important success bg-color mg-top-20 mg-bot-20"}>
+                    Are you looking to add a new dimension to your React projects? Look no further! Our React library is the ultimate tool to boost your front-end development.
+                </Alert>
                 <Title classTitle={"type2"} lvl={"h2"}>🌟 Why choose our React library? 🌟</Title>
-                <Content classContent={"mg-top-10"}>
+                <Content classContent={"mg-top-10 mg-bot-20"}>
                     - Unmatched Performance: Thanks to cutting-edge optimizations, our components react instantly, providing a seamless user experience. <br/>
                     - Infinitely Customizable: Easily modify and adapt our components to align perfectly with your creative vision. <br/>
                     - Active Support: Our team of experienced developers is here to answer your questions and resolve your issues in a flash. <br/>

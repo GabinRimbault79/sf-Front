@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {Code, Content, Img, Lame, Tag, Title, Wrapper, WrapperExample} from "../../../lib";
-import Accordion from "../../../lib/components/modules/General/Accordion/Accordion";
-import Table from "../../../lib/components/base/Table";
+import {Code, Content, Accordion, Table, Tag, Title, WrapperExample} from "../../../lib";
 
 class TableBase extends Component {
     render() {
@@ -10,7 +8,7 @@ class TableBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Table</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Table} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Table} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>

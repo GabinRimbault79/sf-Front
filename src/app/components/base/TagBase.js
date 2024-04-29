@@ -8,7 +8,7 @@ class TagBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Tag</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Tag} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Tag} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>

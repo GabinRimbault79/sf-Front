@@ -49,7 +49,7 @@ class ListBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>List</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {List} from "@gabinrimbault/sf-frontend"`}
+                    {`import {List} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>

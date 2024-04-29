@@ -7,7 +7,7 @@ const MainIndex = () => {
         <>
             <Wrapper>
                 <Title classTitle={"type1 center mg-top-10"} lvl={"h1"}>Create accessible React apps speed with <br/>  <span className={"infos"}>SimpleFramwork FrontEnd</span></Title>
-                <Content classContent={"center"}>SF-FRONT is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications</Content>
+                <Content classContent={"center"}>SF-FRONT is a minimalist, modular, and accessible React component library, providing you with the fundamental tools to build your applications.</Content>
             </Wrapper>
             <Wrapper classWrapper={"center mg-top-10"}>
                 <Button size={"md"} href={"/install"} classBtn={"btn primary bg-color"}>Get Started <i className="fa-solid fa-arrow-right"></i></Button>
@@ -16,7 +16,7 @@ const MainIndex = () => {
             <hr/>
             <Wrapper>
                 <Title classTitle={"type1 center"}>An experience you'd expect from a design system</Title>
-                <Content classContent={"center"}>Opinionated and designed for daily use.</Content>
+                <Content classContent={"center"}>Guided by convictions and designed for regular use.</Content>
                 <GptCards>
                     <Cards>
                         <Cards.Header>

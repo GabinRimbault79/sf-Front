@@ -17,7 +17,7 @@ class SidebarBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Sidebar</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Sidebar} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Sidebar} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -25,7 +25,6 @@ class SidebarBase extends Component {
                         <Title classTitle={"type3 mg-top-10"} lvl={"h3"}>Props</Title>
                     </Accordion.Title>
                     <Accordion.Body>
-                        {/* Prop 'children' (used by Accordion.Title and Accordion.Body) */}
                         <Tag classTag={"critical bg-color"}>children</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
@@ -51,8 +50,6 @@ class SidebarBase extends Component {
                             </tr>
                             </tbody>
                         </Table>
-
-                        {/* No additional props specific to Accordion component */}
                     </Accordion.Body>
                 </Accordion>
                 <hr/>
@@ -65,17 +62,17 @@ class SidebarBase extends Component {
                                 Label
                             </SideBar.Label>
                             <SideBar.Item>
-                                <SideBar.Link link={"/button"}>
+                                <SideBar.Link link={"#"}>
                                     Link 1
                                 </SideBar.Link>
                             </SideBar.Item>
                             <SideBar.Item>
-                                <SideBar.Link link={"/button"}>
+                                <SideBar.Link link={"#"}>
                                     Link 2
                                 </SideBar.Link>
                             </SideBar.Item>
                             <SideBar.Item>
-                                <SideBar.Link link={"/button"}>
+                                <SideBar.Link link={"#"}>
                                     Link 3
                                 </SideBar.Link>
                             </SideBar.Item>
@@ -87,17 +84,17 @@ class SidebarBase extends Component {
         Label
     </SideBar.Label>
     <SideBar.Item>
-        <SideBar.Link link={"/button"}>
+        <SideBar.Link link={"#"}>
             Link 1
         </SideBar.Link>
     </SideBar.Item>
     <SideBar.Item>
-        <SideBar.Link link={"/button"}>
+        <SideBar.Link link={"#"}>
             Link 2
         </SideBar.Link>
     </SideBar.Item>
     <SideBar.Item>
-        <SideBar.Link link={"/button"}>
+        <SideBar.Link link={"#"}>
             Link 3
         </SideBar.Link>
     </SideBar.Item>

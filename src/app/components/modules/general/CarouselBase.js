@@ -8,7 +8,7 @@ class CarouselBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Carousel</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Carousel} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Carousel} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -78,13 +78,11 @@ class CarouselBase extends Component {
                         </Carousel>
                     </WrapperExample.Component>
                     <WrapperExample.Code>
-                        {`
-                            <Carousel>
-                                <img src={"https://placehold.co/150x150"} alt="Image 1" />
-                                <img src={"https://placehold.co/250x250"} alt="Image 2" />
-                                <img src={"https://placehold.co/350x350"} alt="Image 3" />
-                            </Carousel>
-                         `}
+                        {`<Carousel>
+    <img src={"https://placehold.co/150x150"} alt="Image 1" />
+    <img src={"https://placehold.co/250x250"} alt="Image 2" />
+    <img src={"https://placehold.co/350x350"} alt="Image 3" />
+</Carousel>`}
                     </WrapperExample.Code>
                 </WrapperExample>
             </>

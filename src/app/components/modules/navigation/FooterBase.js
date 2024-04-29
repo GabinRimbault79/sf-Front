@@ -8,7 +8,7 @@ class FooterBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Footer</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Footer} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Footer} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -16,7 +16,6 @@ class FooterBase extends Component {
                         <Title classTitle={"type3 mg-top-10"} lvl={"h3"}>Props</Title>
                     </Accordion.Title>
                     <Accordion.Body>
-                        {/* Prop 'children' (used by Accordion.Title and Accordion.Body) */}
                         <Tag classTag={"critical bg-color"}>children</Tag>
                         <hr/>
                         <Content classContent={"font-small"}>
@@ -42,8 +41,6 @@ class FooterBase extends Component {
                             </tr>
                             </tbody>
                         </Table>
-
-                        {/* No additional props specific to Accordion component */}
                     </Accordion.Body>
                 </Accordion>
                 <hr/>
@@ -57,8 +54,8 @@ class FooterBase extends Component {
                     </WrapperExample.Component>
                     <WrapperExample.Code>
                         {`<Footer>
-        <Content classContent={"center"}>My Footer © My Footer</Content>
-    </Footer>`}
+    <Content classContent={"center"}>My Footer © My Footer</Content>
+</Footer>`}
                     </WrapperExample.Code>
                 </WrapperExample>
             </>

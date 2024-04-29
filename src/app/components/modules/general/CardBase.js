@@ -8,7 +8,7 @@ class CardBase extends Component {
                 <Title classTitle={"type1 heading"} lvl={"h1"}>Cards</Title>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Import</Title>
                 <Code>
-                    {`import {Cards} from "@gabinrimbault/sf-frontend"`}
+                    {`import {Cards} from "simpleframework-front"`}
                 </Code>
                 <hr/>
                 <Accordion>
@@ -135,18 +135,18 @@ class CardBase extends Component {
                     </WrapperExample.Component>
                     <WrapperExample.Code>
                         {`<GptCards>
-            <Cards>
-                <Cards.Header>
-                    <Title classTitle={"type3"} lvl={"h3"}>Header</Title>
-                </Cards.Header>
-                <Cards.Body>
-                    <Content>Lorem Ipsum</Content>
-                </Cards.Body>
-                <Cards.Footer>
-                    <Button classBtn={"primary bg-color"} size={"lg"}>Click Me</Button>
-                </Cards.Footer>
-            </Cards>
-        </GptCards>`}
+    <Cards>
+        <Cards.Header>
+            <Title classTitle={"type3"} lvl={"h3"}>Header</Title>
+        </Cards.Header>
+        <Cards.Body>
+            <Content>Lorem Ipsum</Content>
+        </Cards.Body>
+        <Cards.Footer>
+            <Button classBtn={"primary bg-color"} size={"lg"}>Click Me</Button>
+        </Cards.Footer>
+    </Cards>
+</GptCards>`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Multiple Cards</Title>
@@ -194,43 +194,43 @@ class CardBase extends Component {
                     </WrapperExample.Component>
                     <WrapperExample.Code>
                         {`<GptCards>
-            <Cards>
-                <Cards.Header>
-                    <i className="fa-brands fa-dev"></i>
-                    <Title classTitle={"type3"} lvl={"h3"}>Header</Title>
-                </Cards.Header>
-                <Cards.Body>
-                    <Content>Lorem Ipsum</Content>
-                </Cards.Body>
-                <Cards.Footer>
-                    <Button classBtn={"primary bg-color"} size={"lg"}>Click Me</Button>
-                </Cards.Footer>
-            </Cards>
-            <Cards>
-                <Cards.Header>
-                    <i className="fa-brands fa-dev"></i>
-                    <Title classTitle={"type3"} lvl={"h3"}>Header</Title>
-                </Cards.Header>
-                <Cards.Body>
-                    <Content>Lorem Ipsum</Content>
-                </Cards.Body>
-                <Cards.Footer>
-                    <Button classBtn={"primary bg-color"} size={"lg"}>Click Me</Button>
-                </Cards.Footer>
-            </Cards>
-            <Cards>
-                <Cards.Header>
-                    <i className="fa-brands fa-dev"></i>
-                    <Title classTitle={"type3"} lvl={"h3"}>Header</Title>
-                </Cards.Header>
-                <Cards.Body>
-                    <Content>Lorem Ipsum</Content>
-                </Cards.Body>
-                <Cards.Footer>
-                    <Button classBtn={"primary bg-color"} size={"lg"}>Click Me</Button>
-                </Cards.Footer>
-            </Cards>
-        </GptCards>`}
+    <Cards>
+        <Cards.Header>
+            <i className="fa-brands fa-dev"></i>
+            <Title classTitle={"type3"} lvl={"h3"}>Header</Title>
+        </Cards.Header>
+        <Cards.Body>
+            <Content>Lorem Ipsum</Content>
+        </Cards.Body>
+        <Cards.Footer>
+            <Button classBtn={"primary bg-color"} size={"lg"}>Click Me</Button>
+        </Cards.Footer>
+    </Cards>
+    <Cards>
+        <Cards.Header>
+            <i className="fa-brands fa-dev"></i>
+            <Title classTitle={"type3"} lvl={"h3"}>Header</Title>
+        </Cards.Header>
+        <Cards.Body>
+            <Content>Lorem Ipsum</Content>
+        </Cards.Body>
+        <Cards.Footer>
+            <Button classBtn={"primary bg-color"} size={"lg"}>Click Me</Button>
+        </Cards.Footer>
+    </Cards>
+    <Cards>
+        <Cards.Header>
+            <i className="fa-brands fa-dev"></i>
+            <Title classTitle={"type3"} lvl={"h3"}>Header</Title>
+        </Cards.Header>
+        <Cards.Body>
+            <Content>Lorem Ipsum</Content>
+        </Cards.Body>
+        <Cards.Footer>
+            <Button classBtn={"primary bg-color"} size={"lg"}>Click Me</Button>
+        </Cards.Footer>
+    </Cards>
+</GptCards>`}
                     </WrapperExample.Code>
                 </WrapperExample>
                 <Title classTitle={"type2 mg-top-10"} lvl={"h2"}>Cards Link</Title>
@@ -250,15 +250,15 @@ class CardBase extends Component {
                     </WrapperExample.Component>
                     <WrapperExample.Code>
                         {`<GptCards>
-            <Cards link={"#"}>
-                <Cards.Header>
-                    <Title classTitle={"type3"} lvl={"h3"}>Header</Title>
-                </Cards.Header>
-                <Cards.Body>
-                    <Content>Lorem Ipsum</Content>
-                </Cards.Body>
-            </Cards>
-        </GptCards>`}
+    <Cards link={"#"}>
+        <Cards.Header>
+            <Title classTitle={"type3"} lvl={"h3"}>Header</Title>
+        </Cards.Header>
+        <Cards.Body>
+            <Content>Lorem Ipsum</Content>
+        </Cards.Body>
+    </Cards>
+</GptCards>`}
                     </WrapperExample.Code>
                 </WrapperExample>
             </>
