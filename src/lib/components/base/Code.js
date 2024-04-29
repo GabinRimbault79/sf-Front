@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Code({classCode, children}) {
   const style = classCode !== undefined ? classCode + " bloc-code" : "bloc-code"
 
