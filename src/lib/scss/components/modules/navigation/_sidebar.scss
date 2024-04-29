@@ -19,12 +19,11 @@
     }
 
     &.sidebar-item{
-      display: flex;
-      justify-content: space-between;
+      display: block;
     }
 
     a.sidebar-link{
-      margin-right: 35px;
+      display: block;
       margin-left: 5px;
     }
   }

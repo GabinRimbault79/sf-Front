@@ -1,12 +1,12 @@
 # 🚀 Welcome to the SF Project - FrontEnd 👋
 
-[![Branch](https://img.shields.io/static/v1?label=Branch&message=master&color=blue)](https://gitlab.com/GabinRimbault/template_project)  [![Version](https://img.shields.io/static/v1?label=Version&message=0.11.1&color=blue)](https://gitlab.com/GabinRimbault/template_project) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Frimbault_gabin)](https://twitter.com/rimbault_gabin)
+[![Branch](https://img.shields.io/static/v1?label=Branch&message=master&color=blue)](https://gitlab.com/GabinRimbault/template_project)  [![Version](https://img.shields.io/static/v1?label=Version&message=0.11.5&color=blue)](https://gitlab.com/GabinRimbault/template_project) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Frimbault_gabin)](https://twitter.com/rimbault_gabin)
 
 ## Community 🚀
 - We need your feedback and support for the [future](https://github.com/GabinRimbault79/sf-Front/discussions/1) 🚀.
 
 ## New VERSION
-- [0.11.1](Doc/v0.11.1)
+- [0.11.5](Doc/v0.11.5)
 
 Are you looking to add a new dimension to your React projects? Look no further! Our React library is the ultimate tool to boost your front-end development.
 
