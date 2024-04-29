@@ -1,3 +1,4 @@
+import React from "react";
 import Prism from "prismjs";
 import {useEffect} from "react";
 import "../scss/prism.css";
