@@ -1,0 +1,64 @@
+.center{
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.right{
+  justify-content: right;
+  text-align: right;
+}
+
+.left{
+  justify-content: left;
+  text-align: left;
+}
+
+.justify{
+  justify-content: space-between;
+  text-align: justify;
+}
+
+//MARGIN TOP
+
+.mg-top-10{
+  margin-top: 10px;
+}
+
+.mg-top-20{
+  margin-top: 20px;
+}
+
+//MARGIN BOT
+
+.mg-bot-10{
+  margin-bottom: 10px;
+}
+
+.mg-bot-20{
+  margin-bottom: 20px;
+}
+
+.mg-bot-50{
+  margin-bottom: 50px;
+}
+
+//MARGIN LEFT
+
+.mg-l-10{
+  margin-left: 10px;
+}
+
+.mg-l-20{
+  margin-left: 20px;
+}
+
+//MARGIN RIGHT
+
+.mg-r-10{
+  margin-right: 10px;
+}
+
+.mg-r-20{
+  margin-right: 20px;
+}

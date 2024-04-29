@@ -1,0 +1,21 @@
+/* Tooltip.css */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  top: -30px; /* Ajustez la position du Tooltip */
+  left: 50%; /* Ajustez la position du Tooltip */
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=_tooltip.css.map */

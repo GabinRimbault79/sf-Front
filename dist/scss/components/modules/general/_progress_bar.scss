@@ -1,0 +1,12 @@
+.progress_bar {
+  .bar_style {
+    background-color: $grey-primary;
+    border-radius: 25px;
+
+    .bar_color {
+      height: 100%;
+      border-radius: 25px;
+    }
+  }
+}
+

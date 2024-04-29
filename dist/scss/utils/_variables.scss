@@ -1,0 +1,122 @@
+/* ----------------------------- GENERAL ----------------------------- */
+//Default Color
+$color-w: #FFFFFF;
+$color-b: #000000;
+$color-default: #A4CAFD;
+$color-default-rgba: rgba(164, 202, 253, 0.3);
+
+//Color
+$primary-color: #16559f;
+$teinte-primary: rgba(22, 85, 159, 0.1);
+$secondary-color: #48c0fd;
+$teinte-secondary: rgba(72, 192, 253, 0.1);
+$tertiary-color: #9f2f16;
+$complementary: #f3c519;
+
+
+//Grey
+$grey-primary: #e9ecef;
+$grey-secondary: #f7f7f7;
+$grey-tertiary: #F9FAFB;
+$grey-4: #9BA3AF;
+$grey-5: #F3F4F6;
+
+//Link Color
+$link-color: #1f9f16;
+$hover-color: #169f9f;
+$hover-op-color: rgba(100,255,218,0.1);
+$shadow-color: rgba(2,12,27,0.7);
+
+//Background Color
+$bg-default: #F0F0F0;
+$bg-secondary: #243776;
+$bg-tertiary: #F9FAFB;
+$bg-w: $color-w;
+
+//Border Color
+$border-default: $tertiary-color;
+
+//Color Status
+$success: #30C48D;
+$bg-success: #D9F7E5;
+$hover-success: rgba(48, 196, 141, 0.1);
+
+$critical: #F87F7F;
+$bg-critical: #FEE2E2;
+$hover-critical: rgba(248, 127, 127, 0.1);
+
+$warning: #F9CA16;
+$bg-warning: #FEF3C7;
+$hover-warning: rgba(249, 202, 22, 0.1);
+
+$infos: #76A9FA;
+$bg-infos: #CEF4FC;
+$hover-infos: rgba(118, 169, 250, 0.1);
+
+//Color Language
+$code-color: #d63384;
+$frontend-color: #0ad6ff;
+$html-color: rgb(255, 34, 83);
+$react-color: rgb(210, 108, 213);
+$javascript-color: #FFF01F;
+$nodejs-color: #ab20fd;
+$java-color: #56fca2;
+
+/* ----------------------------- COLOR & BG ----------------------------- */
+$grey: #EDF2F7;
+$grey-bg: #E2E8F0;
+$red: #E53E3E;
+$red-bg: #C53030;
+$orange: #DD6B20;
+$orange-bg: #C05621;
+$yellow: #ECC94B;
+$yellow-bg: #D69E2E;
+$green: #38A169;
+$green-bg: #2F855A;
+$blue: #3182ce;
+$blue-bg: #2b6cb0;
+$purple: #805AD5;
+$purple-bg: #6B46C1;
+
+/* ----------------------------- COLOR SOCIAL ----------------------------- */
+$linkedin: #00A0DC;
+$linkedin-bg: #008CC9;
+$facebook: #385898;
+$facebook-bg: #314E89;
+$messenger: #0078FF;
+$messenger-bg: #0063D1;
+$whatsapp: #22c35e;
+$whatsapp-bg: #179848;
+$twitter: #1DA1F2;
+$twitter-bg: #1A94DA;
+
+/* ----------------------------- FONT ----------------------------- */
+
+//Font-size
+$title: xxx-large;
+$sub-title: 30px;
+$min-title: 20px;
+$paragraph: 16px;
+$sub-paragraph: 14px;
+$min-text: 12px;
+
+$font-small: 0.8rem;
+$font-medium: 1rem;
+$font-large: 1.2rem;
+
+//Font-weight
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+
+//Font-Family
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;1,700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+$main-family: 'Ubuntu', sans-serif;
+$secondary-family: 'Ubuntu Mono', monospace;
+$code-family: 'Space Mono', monospace;
