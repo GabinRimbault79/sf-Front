@@ -17,14 +17,19 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
-
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+  }
   ul {
     list-style: none;
     padding: 0;
 
     li {
       padding: 5px;
-      font-size: 25px;
+      font-size: 20px;
     }
 
     &.social {

@@ -1,7 +1,7 @@
 import React from "react";
 import List from "../../../base/List";
 
-export default function HeadBar({ classHeadBar, classLink = "liseret", data, icons }) {
+export default function HeadBar({ classHeadBar, title, iconsTitle, classLink = "liseret", data, icons }) {
   const style = classHeadBar ? "headbar " + classHeadBar : "headbar";
   let listNav = null;
 
@@ -25,7 +25,7 @@ export default function HeadBar({ classHeadBar, classLink = "liseret", data, ico
     <header className={style}>
       <nav>
         <div className={"logo_content"}>
-          <i className="fa-brands fa-react"></i> SF
+          {iconsTitle} {title}
         </div>
         <List type={"ul"} classLink={classLink} data={listNav} />
         <div className={"social_content"}>

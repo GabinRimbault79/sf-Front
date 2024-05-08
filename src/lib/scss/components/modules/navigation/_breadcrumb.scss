@@ -16,14 +16,13 @@
           }
         }
       }
+      &:before{
+        margin-left: 10px;
+        margin-right: 5px;
+        content: ">";
+      }
       a{
         color: $primary-color;
-        &:before{
-          margin-left: 10px;
-          margin-right: 5px;
-          content: ">";
-        }
-
         &:hover{
           color: $secondary-color;
         }

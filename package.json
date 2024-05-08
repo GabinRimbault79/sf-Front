@@ -1,6 +1,6 @@
 {
   "name": "simpleframework-front",
-  "version": "0.11.13",
+  "version": "0.12.0",
   "description": "SimpleFrameworks Front-End",
   "private": false,
   "main": "dist/index.js",

@@ -30,7 +30,7 @@ import Table from "./components/base/Table";
 import Accordion from "./components/modules/General/Accordion/Accordion";
 import ButtonGrp from "./components/base/ButtonGrp";
 import Tooltip from "./components/modules/Information/Tooltip/Tooltip";
-
+import ToggleSwitch from "./components/form/ToggleSwitch";
 
 export {
     Title,
@@ -64,5 +64,6 @@ export {
     Table,
     Accordion,
     ButtonGrp,
-    Tooltip
+    Tooltip,
+    ToggleSwitch
 }
