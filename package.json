@@ -6,8 +6,9 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
-    "dist",
-    "readme.md"
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
   ],
   "repository": {
     "type": "git",
