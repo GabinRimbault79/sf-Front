@@ -11,8 +11,7 @@
 
 ## Documentation 📚
 
-- PreAlpha website: [Simple-Framework](http://simple-framework.fr/)
-- Latest release notes: [v0.12.0](./Doc/v0.12.0.md)
+- Latest release notes: [v0.12.0](./Doc/v0.13.0.md)
 - Contribution and release guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 SF Project FrontEnd is a React component library designed to help you build interfaces faster with reusable UI building blocks and SCSS styling utilities.
