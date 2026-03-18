@@ -13,6 +13,7 @@
 
 - PreAlpha website: [Simple-Framework](http://simple-framework.fr/)
 - Latest release notes: [v0.12.0](./Doc/v0.12.0.md)
+- Contribution and release guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 SF Project FrontEnd is a React component library designed to help you build interfaces faster with reusable UI building blocks and SCSS styling utilities.
 
@@ -33,6 +34,21 @@ Integrate the library into your React project and start composing interfaces wit
 ```bash
 npm install simpleframework-front
 ```
+
+## Peer Dependencies ⚛️
+
+This library expects the consumer project to provide the following peer dependencies:
+
+- `react`: `^18.2.0`
+- `react-dom`: `^18.2.0`
+
+Example:
+
+```bash
+npm install react react-dom simpleframework-front
+```
+
+If these peer dependencies are missing, your package manager may display a warning during installation.
 
 ## Usage / Example 💡
 
@@ -83,60 +99,6 @@ npm run test
 - `npm run start` starts the local development server.
 - `npm run build` transpiles the library from `src/lib` into `dist`.
 - `npm run test` runs the test suite.
-
-## Release Process 🚀
-
-Contributions are welcome through issues and pull requests. This section documents how the library is built, verified, and published so contributors and maintainers can understand the release workflow.
-
-### 🛠️ Build the library
-
-Generate the distributable files with:
-
-```bash
-npm run build
-```
-
-This command transpiles the library source from `src/lib` into `dist`.
-
-### 📦 Prepack behavior
-
-Before packaging or publishing the library, npm automatically runs the `prepack` script:
-
-```bash
-npm run build
-```
-
-This ensures the latest build output is included in the package.
-
-### ✅ Verify the package contents
-
-Before publishing, check the package contents with:
-
-```bash
-npm pack --dry-run
-```
-
-This helps confirm that only the expected files are included in the final package.
-
-### 🚀 Publish the package
-
-When a release is ready, the package can be published with:
-
-```bash
-npm publish
-```
-
-Official package publication should be handled by project maintainers.
-
-### 🔍 Recommended release checklist
-
-Before a release, make sure to:
-
-- run `npm install`
-- run `npm run build`
-- run `npm pack --dry-run`
-- verify the version in `package.json`
-- confirm that the `dist` output is up to date
 
 ## Project Roadmap 🗺️
 
