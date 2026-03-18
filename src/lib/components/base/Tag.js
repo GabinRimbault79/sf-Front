@@ -1,16 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Tag({ children, classTag, linkTag = null }) {
-  const style = classTag !== undefined ? classTag + " tag" : "tag";
+  const style = classTag ? classTag + " tag" : "tag";
 
   return (
     <>
-      {linkTag !== null ? (
+      {linkTag ? (
         <span className={style}>
-          <Link to={linkTag}>
+          <a href={linkTag}>
             {children}
-          </Link>
+          </a>
         </span>
       ) : (
         <span className={style}>
