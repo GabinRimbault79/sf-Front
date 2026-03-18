@@ -1,114 +1,136 @@
-# 🚀 Welcome to the SF Project - FrontEnd 👋
+# Welcome to SF Project FrontEnd 🚀
 
-[![Branch](https://img.shields.io/static/v1?label=Branch&message=master&color=blue)](https://gitlab.com/GabinRimbault/template_project)  [![Version](https://img.shields.io/static/v1?label=Version&message=0.12.0&color=blue)](https://gitlab.com/GabinRimbault/template_project) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Frimbault_gabin)](https://twitter.com/rimbault_gabin)
+[![Branch](https://img.shields.io/static/v1?label=Branch&message=v0.13&color=blue)](https://github.com/GabinRimbault79/sf-Front)
+[![Version](https://img.shields.io/static/v1?label=Version&message=0.13.0&color=blue)](https://github.com/GabinRimbault79/sf-Front)
+[![License](https://img.shields.io/static/v1?label=License&message=MIT&color=brightgreen)](./LICENSE)
 
 ## Community 🚀
-- We need your feedback and support for the [future](https://github.com/GabinRimbault79/sf-Front/discussions/1) 🚀.
 
-## Documentation
-- PreAlpha : [Simple-Framework](http://simple-framework.fr/)
+- We need your feedback and support for the [future of the project](https://github.com/GabinRimbault79/sf-Front/discussions/1).
+- Contributions are welcome through issues and pull requests.
 
-## New VERSION
-- [0.12.0](Doc/v0.12.0)
+## Documentation 📚
 
-Are you looking to add a new dimension to your React projects? Look no further! Our React library is the ultimate tool to boost your front-end development.
+- Latest release notes: [v0.13.0](./Doc/v0.13.0.md)
+- Contribution and release guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+SF Project FrontEnd is a React component library designed to help you build interfaces faster with reusable UI building blocks and SCSS styling utilities.
 
 🌟 **Why choose our React library?** 🌟
 
-- **Unmatched Performance:** Thanks to cutting-edge optimizations, our components react instantly, providing a seamless user experience.
-- **Infinitely Customizable:** Easily modify and adapt our components to align perfectly with your creative vision.
-- **Active Support:** Our team of experienced developers is here to answer your questions and resolve your issues in a flash.
+- **Reusable components:** Build pages faster with ready-to-use UI elements.
+- **Customizable styles:** Adapt components to your own visual identity.
+- **Library-first approach:** Package and reuse your front-end work across projects.
 
 ⚡ **Get started now!** ⚡
 
-Integrate our React library into your projects and discover how it can revolutionize your web development approach.
+Integrate the library into your React project and start composing interfaces with SF Project FrontEnd components.
 
-To get started, follow the steps below:
-1. **Easy Installation:** Add our library to your project with just a few simple commands.
-2. **Quick Integration:** Use our React components in your applications in no time.
-3. **Unlimited Customization:** Get creative by adapting our components to your specific needs.
+## Install 📦
 
-Stay tuned for the release of our comprehensive documentation, which will guide you through all the library's features. We're working hard to provide you with the resources you need to make the most of our SF-Project FrontEnd React Library.
+**Requirement:** Make sure you are using a compatible React environment.
 
-Join the front-end development revolution with the React Library. The future of your projects starts here! 💪
+```bash
+npm install simpleframework-front
+```
 
+## Peer Dependencies ⚛️
 
-## Install
+This library expects the consumer project to provide the following peer dependencies:
 
-**Requis :** You need to have the latest version of the SF-Front.
+- `react`: `^18.2.0`
+- `react-dom`: `^18.2.0`
 
-	npm i simpleframework-front
+Example:
 
-## Usage/Examples
+```bash
+npm install react react-dom simpleframework-front
+```
 
-```javascript
-import { Title } from 'simpleframework-front'
+If these peer dependencies are missing, your package manager may display a warning during installation.
+
+## Usage / Example 💡
+
+```jsx
+import { Title } from "simpleframework-front";
 
 function App() {
-  return <Title lvl="h1">My Title</Title>
+  return <Title lvl="h1">My Title</Title>;
 }
 ```
 
-## Run Locally
+## Run Locally 🧪
 
-Clone the project
-
-```bash
-  git clone https://github.com/GabinRimbault79/sf-Front.git
-```
-
-Go to the project directory
+Clone the project:
 
 ```bash
-  cd sf-Front
+git clone https://github.com/GabinRimbault79/sf-Front.git
 ```
 
-Install dependencies
+Move into the project directory:
 
 ```bash
-  npm install
+cd sf-Front
 ```
 
-Start the server
+Install dependencies:
 
 ```bash
-  npm run start
+npm install
 ```
 
-# Project Roadmap
+Start the development server:
 
-Follow our roadmap to discover the exciting upcoming milestones of our project!
+```bash
+npm run start
+```
 
-## Version 1.0.0 (Soon)
+## Available Scripts 🛠️
 
-- 📖 **Complete Documentation:** Finalizing the comprehensive project documentation.
-- 🐛 **Bug Fixes:** Addressing bugs reported by our dedicated users.
+Useful commands for local development:
 
-## Version 1.1.0 (Upcoming)
+```bash
+npm run start
+npm run build
+npm run test
+```
 
-- 🛠️ **Optimizations:** Implementing optimizations to enhance performance.
-- 🚀 **New Composants:** Introducing new components to improve the user experience.
+- `npm run start` starts the local development server.
+- `npm run build` transpiles the library from `src/lib` into `dist`.
+- `npm run test` runs the test suite.
 
-Stay tuned for more details on each version as we progress in our exciting development journey! 🚀
+## Project Roadmap 🗺️
 
-## Colors
+Follow our roadmap to discover the next milestones of the project.
 
-| Variables        | Hexadécimal | Colors                                                   |
-|:-----------------|:------------|:---------------------------------------------------------|
-| `$primary-color`   | #112240    | ![#16559f](https://placehold.co/30x30/16559f/16559f.png) |
-| `$secondary-color` | #233554    | ![#48c0fd](https://placehold.co/30x30/48c0fd/48c0fd.png) |
-| `$tertiary-color`  | #8892b0    | ![#9f2f16](https://placehold.co/30x30/9f2f16/9f2f16.png) |
-| `$link-color`      | #ccd6f6    | ![#1f9f16](https://placehold.co/30x30/1f9f16/1f9f16.png) |
-| `$hover-color`     | #0ad6ff    | ![#169f9f](https://placehold.co/30x30/169f9f/169f9f.png) |
-| `$success`         | #0f5132    | ![#0f5132](https://placehold.co/30x30/0f5132/0f5132.png) |
-| `$critical`        | #842029    | ![#842029](https://placehold.co/30x30/842029/842029.png) |
-| `$warning`         | #664d03    | ![#664d03](https://placehold.co/30x30/664d03/664d03.png) |
-| `$infos`           | #055160    | ![#055160](https://placehold.co/30x30/055160/055160.png) |
+### Version 1.0.0
 
-To see other color variables, please refer to the scss variables file.
+- 📖 Complete documentation
+- 🐛 Bug fixes and stability improvements
 
+### Version 1.1.0
 
-## Authors
+- 🛠️ More optimizations
+- 🚀 New components
+
+Stay tuned for future updates as the project continues to grow.
+
+## Design Tokens 🎨
+
+| Variables          | Hexadecimal | Preview |
+|:-------------------|:------------|:--------|
+| `$primary-color`   | `#112240`   | ![#112240](https://placehold.co/30x30/112240/112240.png) |
+| `$secondary-color` | `#233554`   | ![#233554](https://placehold.co/30x30/233554/233554.png) |
+| `$tertiary-color`  | `#8892b0`   | ![#8892b0](https://placehold.co/30x30/8892b0/8892b0.png) |
+| `$link-color`      | `#ccd6f6`   | ![#ccd6f6](https://placehold.co/30x30/ccd6f6/ccd6f6.png) |
+| `$hover-color`     | `#0ad6ff`   | ![#0ad6ff](https://placehold.co/30x30/0ad6ff/0ad6ff.png) |
+| `$success`         | `#0f5132`   | ![#0f5132](https://placehold.co/30x30/0f5132/0f5132.png) |
+| `$critical`        | `#842029`   | ![#842029](https://placehold.co/30x30/842029/842029.png) |
+| `$warning`         | `#664d03`   | ![#664d03](https://placehold.co/30x30/664d03/664d03.png) |
+| `$infos`           | `#055160`   | ![#055160](https://placehold.co/30x30/055160/055160.png) |
+
+For more variables, check the SCSS files in the library source.
+
+## Authors ✨
 
 - [@gabinrimbault](https://github.com/GabinRimbault79)
-

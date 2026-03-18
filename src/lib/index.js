@@ -24,7 +24,6 @@ import HeadProduct from "./components/modules/Product/HeadProduct/HeadProduct";
 import Code from "./components/base/Code";
 import GptCards from "./components/modules/General/Cards/GptCards";
 import Carousel from "./components/modules/General/Carousel/Carousel";
-import WrapperExample from "./components/WrapperExample";
 import SideBar from "./components/modules/Navigation/SideBar/SideBar";
 import Table from "./components/base/Table";
 import Accordion from "./components/modules/General/Accordion/Accordion";
@@ -59,7 +58,6 @@ export {
     Code,
     GptCards,
     Carousel,
-    WrapperExample,
     SideBar,
     Table,
     Accordion,
