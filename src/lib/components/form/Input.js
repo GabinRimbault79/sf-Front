@@ -3,7 +3,7 @@ export default function Input({type = "text", name, id = name, callback, ...prop
   return (
     <>
       <label htmlFor={id}>{name}</label>
-      <input onChange={(e) => callback(e.target.value)} id={id + "_input"} name={name} type={type} {...props}/>
+      <input onChange={(e) => callback(e.target.value)} id={id} name={name} type={type} {...props}/>
     </>
   )
 }
