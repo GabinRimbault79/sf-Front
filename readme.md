@@ -1,7 +1,7 @@
 # Welcome to SF Project FrontEnd 🚀
 
-[![Branch](https://img.shields.io/static/v1?label=Branch&message=v0.13&color=blue)](https://github.com/GabinRimbault79/sf-Front)
-[![Version](https://img.shields.io/static/v1?label=Version&message=0.13.0&color=blue)](https://github.com/GabinRimbault79/sf-Front)
+[![Branch](https://img.shields.io/static/v1?label=Branch&message=v0.13.1&color=blue)](https://github.com/GabinRimbault79/sf-Front)
+[![Version](https://img.shields.io/static/v1?label=Version&message=0.13.1&color=blue)](https://github.com/GabinRimbault79/sf-Front)
 [![License](https://img.shields.io/static/v1?label=License&message=MIT&color=brightgreen)](./LICENSE)
 
 ## Community 🚀
@@ -11,7 +11,7 @@
 
 ## Documentation 📚
 
-- Latest release notes: [v0.13.0](./Doc/v0.13.0.md)
+- Latest release notes: [v0.13.1](./Doc/v0.13.1.md)
 - Contribution and release guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 SF Project FrontEnd is a React component library designed to help you build interfaces faster with reusable UI building blocks and SCSS styling utilities.
