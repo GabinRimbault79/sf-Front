@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Button({classBtn, children = "Click Me", href = "", size = "sm", variant = "solid",  ...props}) {
+export default function Button({classBtn, children = "", href = "", size = "sm", variant = "solid",  ...props}) {
   const style = classBtn !== undefined ? classBtn : ""
   if(variant === "solid")
       variant = "btn"
