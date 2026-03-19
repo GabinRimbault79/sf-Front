@@ -16,7 +16,12 @@ export default function List({ type = "ul", data = [], classList, classLink }) {
       return (
         <li key={index} id={key}>
           {isExternalLink ? (
-            <a href={value.liens[0]} className={classLink}>
+            <a
+              href={value.liens[0]}
+              className={classLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {value.icons && value.icons[0] === "left" && value.icons[1]}
               {value.icons && value.icons[0] === "left" && " "}
               {value.liens[1]}
