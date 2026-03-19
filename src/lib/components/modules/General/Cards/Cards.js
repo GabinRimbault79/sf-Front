@@ -10,10 +10,10 @@ const Cards = ({link, classCards, children}) => {
   else return <div className={style}>{children}</div>
 }
 
-Cards.Header = ({ src, title = "h2", children }) => {
+Cards.Header = ({ src, title = "h2", alt = "", children }) => {
     return (
         <div className="cards-header">
-            {src !== undefined && <img src={src} alt="" />}
+            {src !== undefined && <img src={src} alt={alt} />}
             <Title lvl={title}>{children}</Title>
         </div>
     );
