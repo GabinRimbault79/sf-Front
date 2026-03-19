@@ -1,8 +1,9 @@
 # Welcome to SF Project FrontEnd 🚀
 
-[![Branch](https://img.shields.io/static/v1?label=Branch&message=v0.13.1&color=blue)](https://github.com/GabinRimbault79/sf-Front)
-[![Version](https://img.shields.io/static/v1?label=Version&message=0.13.1&color=blue)](https://github.com/GabinRimbault79/sf-Front)
-[![License](https://img.shields.io/static/v1?label=License&message=MIT&color=brightgreen)](./LICENSE)
+[![Version](https://img.shields.io/github/package-json/v/GabinRimbault79/sf-Front)](https://github.com/GabinRimbault79/sf-Front)
+[![Release](https://img.shields.io/github/v/release/GabinRimbault79/sf-Front)](https://github.com/GabinRimbault79/sf-Front/releases)
+[![License](https://img.shields.io/github/license/GabinRimbault79/sf-Front)](./LICENSE)
+
 
 ## Community 🚀
 
