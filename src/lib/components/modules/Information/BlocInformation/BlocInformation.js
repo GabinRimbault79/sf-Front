@@ -5,16 +5,16 @@ const BlocInformation = ({ titre, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const collapse = () => {
-        setIsOpen(!isOpen);
+        setIsOpen((prev) => !prev);
     };
 
     return (
         <Wrapper>
-            <div className={"bloc_information"} onClick={collapse}>
-                <div>
+            <div className={"bloc_information"}>
+                <button type="button" aria-expanded={isOpen} onClick={collapse}>
                     <h2>{titre}</h2>
                     <span>{isOpen ? <i className="fa-solid fa-chevron-up"></i> : <i className="fa-solid fa-chevron-down"></i>}</span>
-                </div>
+                </button>
                 {isOpen && <div className="contenu-collapse">{children}</div>}
             </div>
         </Wrapper>
