@@ -29,7 +29,11 @@ export default function Alert({
               {children}
             </Content>
             <Content classContent="cross-alert">
-              {cross ? <i onClick={handleDel} className="fa-solid fa-xmark"></i> : ""}
+              {cross ? (
+                <button type="button" aria-label="Close alert" onClick={handleDel}>
+                  <i className="fa-solid fa-xmark"></i>
+                </button>
+              ) : ""}
             </Content>
           </div>
           <div className={"content_additional"}>

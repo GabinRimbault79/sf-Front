@@ -1,11 +1,22 @@
 .bloc_information{
   box-shadow: 0 2px 15px -3px $color-b;
-  padding: 20px;
   background-color: $color-w;
 
-  div{
+  button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 20px;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+
+  }
+
+  .contenu-collapse{
+    padding: 20px;
   }
 }

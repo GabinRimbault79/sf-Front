@@ -3,15 +3,14 @@ import React from "react";
 export default function InputSelect({ options = [], classSelectInput, callback }) {
   const handleSelectChange = (event) => {
     const selectedValue = event.target.value;
-    console.log(selectedValue)
-    callback(selectedValue);
+    typeof callback === "function" && callback(selectedValue);
   };
 
   return (
     <>
       <select
         className={classSelectInput !== undefined ? classSelectInput + " input_select" : "input_select"}
-        onChange={handleSelectChange}
+        onChange={ handleSelectChange }
       >
         {Array.isArray(options) &&
           options.map((value, key) => (

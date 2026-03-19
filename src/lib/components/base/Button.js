@@ -1,9 +1,7 @@
 import React from "react";
-import {Link} from "react-router-dom";
 
-export default function Button({classBtn, children = "Click Me", href = "", size = "sm", variant = "solid",  ...props}) {
+export default function Button({classBtn, children = "", href = "", size = "sm", variant = "solid",  ...props}) {
   const style = classBtn !== undefined ? classBtn : ""
-  let linkButton = href !== "" ? href : "";
   if(variant === "solid")
       variant = "btn"
   else if (variant === "outline")
@@ -11,15 +9,15 @@ export default function Button({classBtn, children = "Click Me", href = "", size
   else
       variant = "link"
 
-  if(linkButton !== ""){
+  if(href){
       return (
-          <Link
+          <a
               className={variant + " " + style + " " + size}
-              to={href}
+              href={href}
               {...props}
           >
               {children}
-          </Link>
+          </a>
       )
   }else{
       return (

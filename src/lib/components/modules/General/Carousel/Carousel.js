@@ -32,20 +32,23 @@ export default function Carousel({ classCarousel, children, slideInterval = 5000
         <div className={"carousel " + classCarousel}>
             <img src={currentImage} alt={`Slide ${currentIndex + 1}`} />
             <div className="carousel-navigation">
-                <button className={"carousel-button"} onClick={goToPreviousSlide}>
+                <button type="button" className={"carousel-button"} onClick={goToPreviousSlide} aria-label="Previous slide">
                     <i className="fas fa-chevron-left"></i>
                 </button>
-                <button className={"carousel-button"} onClick={goToNextSlide}>
+                <button type="button" className={"carousel-button"} onClick={goToNextSlide} aria-label="Next slide">
                     <i className="fas fa-chevron-right"></i>
                 </button>
             </div>
             <div className="slide-indicators">
                 {images.map((_, index) => (
-                    <div
+                    <button
                         key={index}
+                        type="button"
                         className={`slide-indicator ${index === activeSlide ? 'active' : ''}`}
+                        aria-label={`Go to slide ${index + 1}`}
+                        aria-current={index === activeSlide ? "true" : undefined}
                         onClick={() => handleSlideChange(index)}
-                    ></div>
+                    ></button>
                 ))}
             </div>
         </div>
