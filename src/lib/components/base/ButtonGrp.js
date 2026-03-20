@@ -1,10 +1,11 @@
 import React from "react";
 
-const ButtonGrp = ({ children, spacing = 1, isAttached }) => {
+const ButtonGrp = ({ children, spacing = 1 }) => {
+    const childrenCount = React.Children.count(children);
     // Transformer les enfants (boutons) avec le style de marge droite
     const spacedChildren = React.Children.map(children, (child, index) => {
         // Vérifier si l'enfant est le dernier dans la liste
-        const isLastChild = index === children.length - 1;
+        const isLastChild = index === childrenCount - 1;
         const isFirstChild = index === 0;
 
         // Calculer le style à appliquer à cet enfant
@@ -44,10 +45,7 @@ const ButtonGrp = ({ children, spacing = 1, isAttached }) => {
         }
     });
 
-    if(isAttached)
-        return <div className={"gpt_button isAttached"}>{spacedChildren}</div>;
-    else
-        return <div className={"gpt_button"}>{spacedChildren}</div>;
+    return <div>{spacedChildren}</div>;
 };
 
 export default ButtonGrp;

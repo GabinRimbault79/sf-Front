@@ -14,7 +14,7 @@ import Input from "./components/form/Input";
 import InputSelect from "./components/form/InputSelect";
 import Tag from "./components/base/Tag";
 import Breadcrumb from "./components/modules/Navigation/Breadcrumb/Breadcrumb";
-import GptTabs from "./components/modules/General/Tabs/GptTabs";
+import InteractiveTabs from "./components/modules/General/Tabs/InteractiveTabs";
 import Tabs from "./components/modules/General/Tabs/Tabs";
 import Footer from "./components/modules/Navigation/Footer/Footer";
 import BlocProduct from "./components/modules/Product/BlocProduct/BlocProduct";
@@ -50,7 +50,7 @@ export {
     Tag,
     Breadcrumb,
     Lame,
-    GptTabs,
+    InteractiveTabs,
     Tabs,
     Footer,
     HeadBar,

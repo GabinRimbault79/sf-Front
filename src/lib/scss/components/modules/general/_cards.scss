@@ -1,6 +1,6 @@
 @use "../../../utils/responsive" as responsives;
 
-.card_group{
+.card-group{
   margin-top: 15px;
   @include responsives.Tablet{
     display: flex;
