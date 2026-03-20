@@ -1,6 +1,6 @@
 @use "../../../utils/responsive" as responsives;
 
-.gpt_cards{
+.card_group{
   margin-top: 15px;
   @include responsives.Tablet{
     display: flex;

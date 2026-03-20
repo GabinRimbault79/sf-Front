@@ -22,7 +22,7 @@ import ExposeProduct from "./components/modules/Product/ExposeProduct/ExposeProd
 import HeadBar from "./components/modules/Navigation/HeadBar/HeadBar";
 import HeadProduct from "./components/modules/Product/HeadProduct/HeadProduct";
 import Code from "./components/base/Code";
-import GptCards from "./components/modules/General/Cards/GptCards";
+import CardGroup from "./components/modules/General/Cards/CardGroup";
 import Carousel from "./components/modules/General/Carousel/Carousel";
 import SideBar from "./components/modules/Navigation/SideBar/SideBar";
 import Table from "./components/base/Table";
@@ -56,7 +56,7 @@ export {
     HeadBar,
     HeadProduct,
     Code,
-    GptCards,
+    CardGroup,
     Carousel,
     SideBar,
     Table,
