@@ -4,7 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is version-based and organized by project area. Breaking changes must always be called out explicitly, including during the `0.x` phase.
 
-## [0.14.0] - Unreleased
+## [0.15.0] - 2026-03-21
+
+### Docs
+- Reworked the README with a clearer introduction, installation guidance, recommended components, and integration examples.
+- Added a public roadmap entry and linked it from the README.
+- Removed outdated documentation references and aligned repository links with the current documentation structure.
+
+## [0.14.0] - 2026-03-21
 
 ### Components
 - Renamed `GptCards` to `CardGroup`.
@@ -27,6 +34,7 @@ The format is version-based and organized by project area. Breaking changes must
 - `GptCards` has been replaced by `CardGroup`.
 - `GptTabs` has been replaced by `InteractiveTabs`.
 - `GptAccordion` has been removed.
+- `ButtonGrp` no longer supports the `isAttached` prop, and the wrapper element/class previously used for attached button styling has been removed.
 
 ## [0.13.1] - 2026-03-20
 
