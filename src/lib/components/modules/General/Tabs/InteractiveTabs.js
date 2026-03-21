@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Tabs from "./Tabs";
 
-export default function GptTabs({ classTabs, children }) {
-  const style = classTabs ? "gpt-tabs  " + classTabs : "gpt-tabs";
+export default function InteractiveTabs({ classTabs, children }) {
+  const style = classTabs ? "interactive-tabs  " + classTabs : "interactive-tabs";
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (index) => {

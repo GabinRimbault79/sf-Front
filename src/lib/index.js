@@ -14,7 +14,7 @@ import Input from "./components/form/Input";
 import InputSelect from "./components/form/InputSelect";
 import Tag from "./components/base/Tag";
 import Breadcrumb from "./components/modules/Navigation/Breadcrumb/Breadcrumb";
-import GptTabs from "./components/modules/General/Tabs/GptTabs";
+import InteractiveTabs from "./components/modules/General/Tabs/InteractiveTabs";
 import Tabs from "./components/modules/General/Tabs/Tabs";
 import Footer from "./components/modules/Navigation/Footer/Footer";
 import BlocProduct from "./components/modules/Product/BlocProduct/BlocProduct";
@@ -22,7 +22,7 @@ import ExposeProduct from "./components/modules/Product/ExposeProduct/ExposeProd
 import HeadBar from "./components/modules/Navigation/HeadBar/HeadBar";
 import HeadProduct from "./components/modules/Product/HeadProduct/HeadProduct";
 import Code from "./components/base/Code";
-import GptCards from "./components/modules/General/Cards/GptCards";
+import CardGroup from "./components/modules/General/Cards/CardGroup";
 import Carousel from "./components/modules/General/Carousel/Carousel";
 import SideBar from "./components/modules/Navigation/SideBar/SideBar";
 import Table from "./components/base/Table";
@@ -50,13 +50,13 @@ export {
     Tag,
     Breadcrumb,
     Lame,
-    GptTabs,
+    InteractiveTabs,
     Tabs,
     Footer,
     HeadBar,
     HeadProduct,
     Code,
-    GptCards,
+    CardGroup,
     Carousel,
     SideBar,
     Table,

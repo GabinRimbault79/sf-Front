@@ -3,8 +3,6 @@ import Prism from "prismjs";
 import {useEffect} from "react";
 import "../scss/prism.css";
 import Tag from "./base/Tag";
-import Title from "./base/Title";
-import SideBar from "./modules/Navigation/SideBar/SideBar";
 
 const WrapperExample = ({children}) => {
   useEffect(() => {
