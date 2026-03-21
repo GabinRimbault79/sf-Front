@@ -5,6 +5,7 @@
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/**/*",
     "readme.md",
@@ -53,7 +54,8 @@
     "start": "react-scripts start",
     "build": "shx rm -rf dist && cross-env NODE_ENV=production babel src/lib --extensions \".js,.jsx,.ts,.tsx\" --out-dir dist --copy-files",
     "check:types": "tsc --project tsconfig.json",
-    "prepack": "npm run build",
+    "build:types": "tsc --project tsconfig.types.json",
+    "prepack": "npm run build && npm run build:types",
     "test": "react-scripts test",
     "test:ci": "cross-env CI=true react-scripts test --passWithNoTests --watchAll=false",
     "eject": "react-scripts eject",
