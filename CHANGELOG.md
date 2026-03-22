@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 The format is version-based and organized by project area. Breaking changes must always be called out explicitly, including during the `0.x` phase.
 
+## [0.16.0] - 2026-03-22
+
+### Components
+- Converted `Title`, `Input`, and `Button` to TypeScript.
+- Clarified the public props of the first typed components.
+- Added a few extra tests for the first typed core components.
+
+### Tooling
+- Added a permissive TypeScript setup for gradual migration.
+- Added a `check:types` script.
+- Updated the build to support `.ts` and `.tsx` files.
+- Added `.d.ts` generation for consumers.
+- Added the package `types` entry.
+
+### CI
+- Updated linting to include `.ts` and `.tsx`.
+- Added `lint` and `check:types` to CI.
+
 ## [0.15.0] - 2026-03-21
 
 ### Docs
