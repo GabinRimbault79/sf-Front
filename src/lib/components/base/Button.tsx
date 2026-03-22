@@ -20,7 +20,7 @@ type NativeButtonProps = CommonProps &
 type ButtonProps = LinkButtonProps | NativeButtonProps;
 
 function isLinkButtonProps(props: ButtonProps): props is LinkButtonProps {
-  return typeof props.href === "string";
+  return typeof props.href === "string" && Boolean(props.href);
 }
 
 export default function Button(props: ButtonProps) {
