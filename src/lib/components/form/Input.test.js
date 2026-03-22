@@ -40,4 +40,15 @@ describe("Input", () => {
     expect(callback).toHaveBeenCalled();
     expect(callback).toHaveBeenLastCalledWith("Test");
   });
+
+  test("uses a custom id when provided", () => {
+    render(<Input name="Email" id="email-field" />);
+
+    const input = screen.getByLabelText("Email");
+    const label = screen.getByText("Email");
+
+    expect(input).toHaveAttribute("id", "email-field");
+    expect(label).toHaveAttribute("for", "email-field");
+  });
+
 });

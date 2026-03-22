@@ -30,4 +30,34 @@ describe("Button", () => {
     await userEvent.click(button);
     expect(onClick).toHaveBeenCalled();
   });
+
+  test("applies variant, size and custom class", () => {
+    render(
+      <Button variant="outline" size="lg" classBtn="custom-btn">
+        Styled Button
+      </Button>
+    );
+
+    const button = screen.getByRole("button", { name: "Styled Button" });
+
+    expect(button).toHaveClass("outline");
+    expect(button).toHaveClass("btn");
+    expect(button).toHaveClass("lg");
+    expect(button).toHaveClass("custom-btn");
+  });
+
+  test("passes native anchor props when rendered as a link", () => {
+    render(
+      <Button href="/docs" target="_blank" rel="noreferrer">
+        Docs
+      </Button>
+    );
+
+    const link = screen.getByRole("link", { name: "Docs" });
+
+    expect(link).toHaveAttribute("href", "/docs");
+    expect(link).toHaveAttribute("target", "_blank");
+    expect(link).toHaveAttribute("rel", "noreferrer");
+  });
+
 });
