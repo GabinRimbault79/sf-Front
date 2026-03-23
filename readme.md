@@ -1,10 +1,11 @@
-# sf-Front
+# SimpleFramework-front
 [![Version](https://img.shields.io/github/package-json/v/GabinRimbault79/sf-Front)](https://github.com/GabinRimbault79/sf-Front) [![CI](https://github.com/GabinRimbault79/sf-Front/actions/workflows/ci.yml/badge.svg)](https://github.com/GabinRimbault79/sf-Front/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/GabinRimbault79/sf-Front)](./LICENSE)
 
+Simpleframework-front is a React component library published on npm, built around reusable atomic components, modular building blocks, and a customizable default styling foundation.
 
-sf-Front is a React component library designed to build consistent interfaces from reusable components and a customizable styling foundation.
+Its goal is to help developers build interfaces more quickly without starting every component from scratch, while still keeping full control over styling and integration.
 
-The library is still being stabilized, but it already provides several usable components for common React interface needs. Current work focuses on improving reliability, documentation, and the clarity of the public API.
+The library is still evolving, with a current focus on API clarity, component stability, documentation, and long-term consistency.
 
 ## Installation
 
@@ -25,15 +26,43 @@ Example:
 npm install react react-dom simpleframework-front
 ```
 
-## Available Components
+## What simpleframework-front provides
 
-`sf-Front` currently provides a growing set of reusable React components across several categories.
+simpleframework-front is built around two main ideas:
 
-### Base
+- **Atomic components**: reusable building blocks such as buttons, typography, wrappers, and basic UI elements.
+- **Modular components**: more complete components built from those atomic building blocks for more concrete interface use cases.
+
+The library also provides a default styling foundation, while still allowing users to apply their own CSS and integrate components into their own design system.
+
+## Core Components
+
+If you are discovering the library, these are currently the best entry points:
+
 - `Button`
+- `Input`
+- `Title`
 - `List`
 - `Tag`
+
+These components represent the current core direction of the package.
+
+## Available Components
+
+`simpleframework-front` currently provides a growing set of components across several categories.
+
+### Atomic / Base
+- `Button`
+- `ButtonGrp`
+- `Code`
+- `Content`
+- `Img`
+- `Lame`
+- `List`
+- `Table`
+- `Tag`
 - `Title`
+- `Wrapper`
 
 ### Form
 - `Input`
@@ -44,23 +73,41 @@ npm install react react-dom simpleframework-front
 - `Breadcrumb`
 - `NavBar`
 - `HeadBar`
+- `Footer`
+- `SideBar`
 
-### Feedback and Composite Components
+### General / Composite
 - `Alert`
-- `Tooltip`
+- `ProgressBar`
+- `Cards`
 - `CardGroup`
+- `Tabs`
 - `InteractiveTabs`
+- `Accordion`
+- `Carousel`
 
-Additional components are also available in the library and will be documented progressively over time.
+### Information
+- `BlocInformation`
+- `Tooltip`
 
-## Recommended Components
+### Product-Oriented Components
+- `BlocProduct`
+- `ExposeProduct`
+- `HeadProduct`
 
-If you are discovering the library, the following components are the best entry points for now:
+Some components are more stable than others and the public API is still being refined. Documentation and examples will continue to improve progressively.
 
-- `Button`
-- `Input`
-- `List`
-- `Title`
+## Styling Philosophy
+
+simpleframework-front ships with a default styling foundation, but it is not meant to lock users into a fixed visual system.
+
+The intended approach is:
+
+- use the provided styles if they fit your project;
+- extend them with your own classes when needed;
+- or replace them entirely with your own CSS.
+
+The goal is to keep components reusable without making styling rigid.
 
 ## Integration Examples
 
@@ -96,6 +143,23 @@ import { Title } from "simpleframework-front";
 <Title lvl="h2">Section title</Title>
 ```
 
+### Tag
+
+```jsx
+import { Tag } from "simpleframework-front";
+
+<Tag>New</Tag>
+```
+
+## Current Focus
+
+Current work is mainly focused on:
+
+- clarifying and stabilizing the public API;
+- improving consistency across core components;
+- strengthening documentation and examples;
+- preparing a local integrated playground for component exploration and testing.
+
 ## Local Development
 
 Useful commands for local work:
@@ -110,6 +174,7 @@ For contribution and release details, see [`CONTRIBUTING.md`](./CONTRIBUTING.md)
 
 ## Project Links
 
+- [Project Scope](./PROJECT_SCOPE.md)
 - [Changelog](./CHANGELOG.md)
 - [Contributing Guide](./CONTRIBUTING.md)
 - [Public Roadmap](https://github.com/GabinRimbault79/sf-Front/issues/38)
