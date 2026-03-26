@@ -190,7 +190,7 @@ For contribution and release details, see [`CONTRIBUTING.md`](./CONTRIBUTING.md)
 
 ## Project Links
 
-- [Project Scope](./PROJECT_SCOPE.md)
+- [Project Scope](./docs/PROJECT_SCOPE.md)
 - [Changelog](./CHANGELOG.md)
 - [Contributing Guide](./CONTRIBUTING.md)
 - [Public Roadmap](https://github.com/GabinRimbault79/sf-Front/issues/38)

@@ -1,250 +1,113 @@
-# sf-Front — Vision and Scope
+# SimpleFramework Front - Project Scope
 
 ## Overview
 
-sf-Front (SimpleFramework - Front) is a React component library published on npm, designed to provide reusable, modular, and easily customizable components.
+SimpleFramework Front is a React component library published on npm as `simpleframework-front`.
 
-The project aims to offer a simple and practical foundation for building React interfaces without imposing a rigid structure or a closed design system.
+The project focuses on reusable atomic components, modular building blocks, and a customizable styling foundation. Its goal is to help developers build interfaces faster without locking them into a rigid structure or fixed design system.
 
-Its goal is to provide useful, consistent, and evolvable components while giving developers real freedom to customize them.
+## Project Direction
 
----
+SimpleFramework Front is intended to remain:
 
-## Positioning
+- simple to understand
+- modular in structure
+- customizable in styling and integration
+- consistent in public API direction
+- progressive in how it evolves
 
-sf-Front does not aim to replicate a full UI ecosystem or become a heavy framework.
+The project does not aim to become a heavy framework.
 
-Its positioning is simpler:
+## Library Model
 
-- provide reusable React components;
-- offer both basic building blocks and more advanced UI blocks;
-- allow easy customization;
-- stay lightweight, readable, and progressive in its evolution.
+The package is built around two main ideas:
 
----
+- atomic components, which act as reusable building blocks
+- modular components, which combine those building blocks into more complete UI pieces
 
-## Goals
+This structure should remain central to the package as it evolves.
 
-sf-Front should make it possible to:
+## Public API Direction
 
-- reuse base components without starting from scratch;
-- compose more advanced components from simple building blocks;
-- use ready-to-use modular components;
-- build consistent interfaces while keeping full control over styling.
+The public API should stay:
 
-The project should remain:
+- clear
+- predictable
+- reasonably consistent across components
+- focused on practical reuse rather than excessive abstraction
 
-- easy to understand;
-- modular;
-- customizable;
-- maintainable over time;
-- consistent in its direction.
+When possible, the package should move toward shared prop conventions, but without forcing uniformity where it does not improve usability.
 
----
+## Styling Direction
 
-## Library Structure
+SimpleFramework Front ships with a default styling foundation, but that styling should remain optional.
 
-### Atomic components
+Consumers should be able to:
 
-**Atomic** components are the basic building blocks of the library.
+- use the provided styles as a starting point
+- extend them with their own classes
+- replace them entirely with their own CSS if needed
 
-They should be:
-- simple;
-- reusable;
-- easy to compose;
-- usable with the provided styling or with custom styles.
+The styling layer should help adoption, not constrain integration.
 
-Examples:
-- `Button`
-- `ButtonGrp`
-- `Code`
-- `Content`
-- `Img`
-- `Lame`
-- `List`
-- `Table`
-- `Tag`
-- `Title`
-- `Wrapper`
+## Component Stability Framing
 
-### Modular components
+The current public messaging uses a lightweight stability framing:
 
-**Modular** components are built from atomic components.
+- `Core`: components recommended as first entry points
+- `Stable`: public and maintained components
 
-Their purpose is to provide:
-- more complete UI blocks;
-- concrete use cases;
-- components that can be used directly in a real project.
+This framing is meant to keep the package easier to understand while API stabilization is still ongoing.
 
-A modular component can be more use-case-oriented as long as it remains consistent with the overall philosophy of the library.
+## Current Focus
 
----
+Current work is mainly focused on:
 
-## Component Status
+- stabilizing Core components first
+- improving API consistency across atomic components
+- continuing TypeScript migration progressively
+- consolidating packaging for better compatibility with modern tooling
+- continuously improving documentation and examples
 
-To clarify the public surface of the library, components can be grouped into four categories:
+## Packaging Direction
 
-- **Core**: the components that best represent the library;
-- **Stable**: usable and maintained components;
-- **Experimental**: components still being stabilized;
-- **Legacy**: components temporarily kept but likely to evolve significantly or leave the public scope later.
+The package should remain simple to consume while improving compatibility with modern tooling over time.
 
-### Current proposal
+Short-term and medium-term packaging decisions should prioritize:
 
-#### Core
-- `Button`
-- `Input`
-- `Title`
-- `List`
-- `Tag`
-- `Wrapper`
+- clarity for consumers
+- minimal unnecessary runtime assumptions
+- compatibility with modern build tools
+- a package surface that remains understandable
 
-#### Stable
-- `ButtonGrp`
-- `Code`
-- `Content`
-- `Img`
-- `Lame`
-- `Table`
+## Playground Direction
 
-#### Experimental
-- `InputSelect`
-- `ToggleSwitch`
-- `BlocProduct`
-- `ExposeProduct`
-- `HeadProduct`
+A local integrated playground/documentation environment is planned inside the repository.
 
-#### Legacy
-No component is currently classified as legacy.
+Its purpose is to support:
 
----
+- visual component documentation
+- quick local testing during development
+- concrete examples for the most important components
 
-## API Philosophy
+The first version should remain simple and focused.
 
-The public API should remain:
+## Scope Guardrails
 
-- simple;
-- consistent;
-- predictable;
-- homogeneous across components.
+Changes are aligned with the project scope when they:
 
-### Customization
+- reinforce the atomic/modular model
+- improve reusability
+- clarify the public API
+- make the package easier to adopt or maintain
 
-Visual customization should primarily be handled through CSS classes.
+Changes should be questioned when they:
 
-The intended principle is:
-- the library can provide a default style;
-- that style should be extendable;
-- it should also be fully replaceable by the consuming project's own CSS.
-
-The provided design system must never become a constraint.
-
-### Prop conventions
-
-Over time, the library should move toward shared conventions where they make sense, especially for props such as:
-
-- `variant`
-- `size`
-- `disabled`
-- `fullWidth`
-- `tone`
-
-Props should remain mainly functional and semantic.  
-Visual customization should continue to be handled primarily through CSS classes.
-
----
-
-## Design System
-
-sf-Front can provide a default design system, but that design system should be treated as a foundation, not as an obligation.
-
-It should offer:
-- a quick starting point;
-- a consistent visual base;
-- styling that is immediately usable.
-
-However, users should still be able to:
-- use the components with their own CSS;
-- ignore the provided styling if needed;
-- keep the component logic without depending on the design system.
-
----
-
-## Public API and Distribution
-
-sf-Front is designed as an npm package that should remain simple to consume.
-
-### Short term
-Keep a single main public entry point.
-
-### Medium term
-Later evaluate the value of sub-entries if a real need appears, for example to:
-- better organize imports;
-- clarify certain categories;
-- improve the package’s overall readability.
-
-Simplicity should remain the priority as long as a more complex structure does not provide a clear benefit.
-
----
-
-## Integrated Playground
-
-The project should include an integrated local playground/documentation environment directly inside the repository.
-
-This playground should make it possible to:
-- visualize components;
-- document their usage;
-- test variants;
-- show concrete examples;
-- serve as the foundation for more complete interactive documentation.
-
-### First version
-The first version of the playground should remain simple:
-
-- focus on core and stable components first;
-- one page per component;
-- clear navigation;
-- visual preview;
-- key props;
-- usage examples;
-- code snippets.
-
-### What to avoid at first
-- complex sandboxing;
-- advanced theming;
-- heavy documentation tooling;
-- unnecessary technical overhead.
-
----
-
-## Evolution Principles
-
-An evolution is relevant if it:
-
-- reinforces the atomic / modular logic;
-- improves reusability;
-- makes the library clearer or more useful;
-- stays consistent with the project’s positioning.
-
-An evolution should be avoided or postponed if it:
-
-- adds complexity without real benefit;
-- weakens API consistency;
-- blurs the identity of the library;
-- pushes the project toward a framework that is too broad or too rigid.
-
----
-
-## Current Priorities
-
-1. Clarify the role and status of components.
-2. Gradually harmonize the public API.
-3. Stabilize the most representative components.
-4. Build a simple and useful integrated playground.
-5. Evolve the library without losing its direction.
-
----
+- add complexity without clear value
+- blur the package identity
+- introduce unnecessary consumer constraints
+- push the project toward a framework-like scope
 
 ## Short Definition
 
-sf-Front is a React component library published on npm, built around reusable atomic components, ready-to-use modular components, and a customizable default style, while still giving users full freedom over integration and CSS.
+SimpleFramework Front is a React component library published on npm as `simpleframework-front`, built around reusable atomic components, modular building blocks, and a customizable styling foundation, while still giving users freedom over integration and CSS.
