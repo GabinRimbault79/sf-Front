@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is version-based and organized by project area. Breaking changes must always be called out explicitly, including during the `0.x` phase.
 
+## [0.16.1] - 2026-03-27
+
+### Tooling
+- Removed `@babel/polyfill` from runtime dependencies.
+
+### Docs
+- Cleaned up inconsistencies across `README`, `docs/PROJECT_SCOPE.md`, and `CONTRIBUTING.md`.
+- Corrected outdated or incorrect public documentation links and references.
+- Clarified project naming, package positioning, and contribution guidance across public project files.
+
 ## [0.16.0] - 2026-03-22
 
 ### Components

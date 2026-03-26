@@ -1,6 +1,6 @@
 {
   "name": "simpleframework-front",
-  "version": "0.16.0",
+  "version": "0.16.1",
   "description": "SimpleFrameworks Front-End",
   "private": false,
   "main": "dist/index.js",
@@ -19,7 +19,6 @@
     "url": "https://github.com/GabinRimbault79/sf-Front/issues"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
     "core-js": "^3.49.0",
     "prismjs": "^1.29.0",
     "react-router-dom": "^6.22.3"
